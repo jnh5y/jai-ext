@@ -33,12 +33,12 @@ import javax.media.jai.ImageLayout;
 import javax.media.jai.RasterFactory;
 import javax.media.jai.SourcelessOpImage;
 
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.Polygon;
-import com.vividsolutions.jts.geom.TopologyException;
-import com.vividsolutions.jts.geom.prep.PreparedGeometry;
-import com.vividsolutions.jtsexample.geom.ExtendedCoordinate;
-import com.vividsolutions.jtsexample.geom.ExtendedCoordinateSequence;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.Polygon;
+import org.locationtech.jts.geom.TopologyException;
+import org.locationtech.jts.geom.prep.PreparedGeometry;
+import org.locationtech.jtsexample.geom.ExtendedCoordinate;
+import org.locationtech.jtsexample.geom.ExtendedCoordinateSequence;
 
 import it.geosolutions.jaiext.utilities.shape.LiteShape;
 

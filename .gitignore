@@ -1,8 +1,9 @@
 ## generic files to ignore
+*.iml
 *.classpath
 *.project
 *.settings
-target/*
+target
 jt-affine/target/*
 jt-algebra/target/*
 jt-scale/target/*
