@@ -53,7 +53,7 @@ import org.eclipse.imagen.UnpackedImageData;
 import org.eclipse.imagen.iterator.RectIterFactory;
 import org.eclipse.imagen.iterator.WritableRectIter;
 
-import com.sun.media.imageioimpl.common.PackageUtil;
+//import com.sun.media.imageioimpl.common.PackageUtil;
 
 public class ImageUtilities {
 
@@ -136,7 +136,8 @@ public class ImageUtilities {
      * @return <code>false</code> in case the JAI/ImageIO native libs are not in the path, <code>true</code> otherwise.
      */
     public static boolean isCLibAvailable() {
-        return PackageUtil.isCodecLibAvailable();
+        return true;
+        //return PackageUtil.isCodecLibAvailable();
     }
 
     /**

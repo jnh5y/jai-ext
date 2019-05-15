@@ -418,7 +418,7 @@
 -->
 <dependency>
 	  <groupId>org.eclipse.imagen</groupId>
-	    <artifactId>imagen_core</artifactId>
+	    <artifactId>imagen-core</artifactId>
 	      <version>${jai.version}</version>
       </dependency>
       <dependency>
@@ -461,7 +461,19 @@
     </dependencies>
   </dependencyManagement>
   
- <dependencies>
+  <dependencies>
+	  <dependency>
+  <groupId>org.eclipse.imagen</groupId>
+  <artifactId>imagen-core</artifactId>
+  <version>${jai.version}</version>
+</dependency>
+<!--
+<dependency>
+  <groupId>org.eclipse.imagen</groupId>
+  <artifactId>jai_codec</artifactId>
+  <version>${jai.version}</version>
+</dependency>
+-->
 	 <!-- Tests or legacy -->
 	 <!--
   <dependency>
