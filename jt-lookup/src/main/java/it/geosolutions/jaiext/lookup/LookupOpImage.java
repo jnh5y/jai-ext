@@ -29,17 +29,17 @@ import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
 import java.util.Map;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.ColormapOpImage;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.ColormapOpImage;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
-import com.sun.media.jai.util.JDKWorkarounds;
+import org.eclipse.imagen.media.util.ImageUtil;
+import org.eclipse.imagen.media.util.JDKWorkarounds;
 
 /**
  * The LookupOpImage class performs the lookup operation on an image with integral data type. This operation consist of passing the input pixels

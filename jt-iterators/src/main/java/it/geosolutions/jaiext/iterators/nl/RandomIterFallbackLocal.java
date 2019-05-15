@@ -22,8 +22,8 @@ import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 
-import javax.media.jai.PlanarImage;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.iterator.RandomIter;
 
 /**
  * Modified version of JAI {@link RandomIterFallbackNoCacheNoArray} that uses a ThreadLocal object for storing the current tile used in iterations.

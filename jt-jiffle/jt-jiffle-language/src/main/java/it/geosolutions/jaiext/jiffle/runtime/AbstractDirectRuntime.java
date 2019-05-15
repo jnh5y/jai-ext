@@ -50,8 +50,8 @@ import java.awt.image.WritableRenderedImage;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.media.jai.iterator.RandomIterFactory;
-import javax.media.jai.iterator.WritableRandomIter;
+import org.eclipse.imagen.iterator.RandomIterFactory;
+import org.eclipse.imagen.iterator.WritableRandomIter;
 
 import it.geosolutions.jaiext.jiffle.JiffleException;
 

@@ -43,12 +43,12 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RasterFactory;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TiledImage;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RasterFactory;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TiledImage;
 import javax.xml.crypto.dsig.TransformException;
 
 import org.junit.Test;

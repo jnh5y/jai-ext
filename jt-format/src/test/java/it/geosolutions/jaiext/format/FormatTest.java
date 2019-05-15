@@ -20,7 +20,7 @@ package it.geosolutions.jaiext.format;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.RenderedOp;
 
 import org.junit.Test;
 import static org.junit.Assert.*;

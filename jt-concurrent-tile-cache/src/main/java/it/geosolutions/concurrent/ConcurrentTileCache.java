@@ -25,7 +25,7 @@ import java.util.Iterator;
 import java.util.Observable;
 import java.util.Vector;
 
-import javax.media.jai.TileCache;
+import org.eclipse.imagen.TileCache;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
@@ -33,7 +33,7 @@ import com.google.common.cache.RemovalCause;
 import com.google.common.cache.RemovalListener;
 import com.google.common.cache.RemovalNotification;
 import com.google.common.cache.Weigher;
-import com.sun.media.jai.util.CacheDiagnostics;
+import org.eclipse.imagen.media.util.CacheDiagnostics;
 
 public class ConcurrentTileCache extends Observable implements TileCache, CacheDiagnostics {
 

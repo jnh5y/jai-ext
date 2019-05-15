@@ -31,10 +31,10 @@ import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
 import java.util.Arrays;
 
-import javax.media.jai.*;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.*;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 public abstract class ConvolveOpImage extends AreaOpImage {
 

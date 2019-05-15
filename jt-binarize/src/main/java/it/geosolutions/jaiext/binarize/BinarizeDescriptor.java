@@ -24,14 +24,14 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderableImage;
 
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderableOp;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderableRegistryMode;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderableOp;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderableRegistryMode;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * An <code>OperationDescriptor</code> describing the "Binarize" operation.
@@ -58,7 +58,7 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * <tr><td>LocalName</td>   <td>Binarize</td></tr>
  * <tr><td>Vendor</td>      <td>it.geosolutions.jaiext</td></tr>
  * <tr><td>Description</td> <td>Thresholds a single banded image into a bilevel image.<td></tr>
- * <tr><td>DocURL</td>      <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/BinarizeDescriptor.html</td></tr>
+ * <tr><td>DocURL</td>      <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/BinarizeDescriptor.html</td></tr>
  * <tr><td>Version</td>     <td>1.1</td></tr>
  * <tr><td>arg0Desc</td>    <td>The threshold value.</td></tr>
  * <tr><td>arg1Desc</td>    <td>The ROI value.</td></tr>
@@ -71,7 +71,7 @@ import javax.media.jai.registry.RenderedRegistryMode;
  *                        <th>Default Value</th></tr>
  * <tr><td>threshold</td> <td>java.lang.Double</td>
  *                        <td>NO_PARAMETER_DEFAULT</td>
- * <tr><td>roi</td> <td>javax.media.jai.ROI</td>
+ * <tr><td>roi</td> <td>org.eclipse.imagen.ROI</td>
  *                        <td>null</td>
  * <tr><td>nodata</td> <td>it.geosolutions.jaiext.range.Range</td>
  *                        <td>null</td>                        
@@ -87,7 +87,7 @@ public class BinarizeDescriptor extends OperationDescriptorImpl {
         {"LocalName",   "Binarize"},
         {"Vendor",      "it.geosolutions.jaiext"},
         {"Description", JaiI18N.getString("BinarizeDescriptor0")},
-        {"DocURL",      "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/BinarizeDescriptor.html"},
+        {"DocURL",      "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/BinarizeDescriptor.html"},
         {"Version",     JaiI18N.getString("DescriptorVersion")},
         {"arg0Desc",    JaiI18N.getString("BinarizeDescriptor2")},
         {"arg1Desc",    JaiI18N.getString("BinarizeDescriptor3")},
@@ -103,7 +103,7 @@ public class BinarizeDescriptor extends OperationDescriptorImpl {
      * The parameter class list for this operation.
      */
     private static final Class[] paramClasses = {
-        java.lang.Double.class, javax.media.jai.ROI.class, it.geosolutions.jaiext.range.Range.class
+        java.lang.Double.class, org.eclipse.imagen.ROI.class, it.geosolutions.jaiext.range.Range.class
     };
 
     /** The parameter default value list*/

@@ -61,8 +61,8 @@ import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.range.RangeDouble;
 import it.geosolutions.jaiext.range.RangeFactory;
 
-import javax.media.jai.ROI;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.iterator.RandomIter;
 
 
 /**

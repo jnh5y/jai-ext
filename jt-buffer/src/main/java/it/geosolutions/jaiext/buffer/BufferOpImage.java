@@ -30,16 +30,16 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import javax.media.jai.AreaOpImage;
-import javax.media.jai.BorderExtender;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFormatTag;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.AreaOpImage;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFormatTag;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 import org.locationtech.jts.geom.Coordinate;
 import org.locationtech.jts.geom.Envelope;
 import org.locationtech.jts.index.strtree.STRtree;

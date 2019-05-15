@@ -42,19 +42,19 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptor;
-import javax.media.jai.OperationNode;
-import javax.media.jai.OperationRegistry;
-import javax.media.jai.PropertyGenerator;
-import javax.media.jai.PropertySource;
-import javax.media.jai.RegistryElementDescriptor;
-import javax.media.jai.registry.RenderedRegistryMode;
-import javax.media.jai.util.ImagingException;
-import javax.media.jai.util.ImagingListener;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptor;
+import org.eclipse.imagen.OperationNode;
+import org.eclipse.imagen.OperationRegistry;
+import org.eclipse.imagen.PropertyGenerator;
+import org.eclipse.imagen.PropertySource;
+import org.eclipse.imagen.RegistryElementDescriptor;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
+import org.eclipse.imagen.util.ImagingException;
+import org.eclipse.imagen.util.ImagingListener;
 
-import com.sun.media.jai.util.PropertyUtil;
+import org.eclipse.imagen.media.util.PropertyUtil;
 
 /**
  * A thread safe implementation of OperationRegistry using Java 5 Concurrent {@link ReadWriteLock}
@@ -65,7 +65,7 @@ import com.sun.media.jai.util.PropertyUtil;
  */
 public final class ConcurrentOperationRegistry extends OperationRegistry {
     /** Path to the JAI default registryfile.jai */
-    static String JAI_REGISTRY_FILE = "META-INF/javax.media.jai.registryFile.jai";
+    static String JAI_REGISTRY_FILE = "META-INF/org.eclipse.imagen.registryFile.jai";
 
     /** Name of the other registryfile.jai */
     static String USR_REGISTRY_FILE = "META-INF/registryFile.jaiext";
@@ -77,10 +77,10 @@ public final class ConcurrentOperationRegistry extends OperationRegistry {
     static final String JAIEXT_PRODUCT = "it.geosolutions.jaiext";
 
     /** String associated to the JAI product */
-    static final String JAI_PRODUCT = "com.sun.media.jai";
+    static final String JAI_PRODUCT = "org.eclipse.imagen.media";
 
     /** String associated to the JAI product when the operation is "Null" */
-    static final String JAI_PRODUCT_NULL = "javax.media.jai";
+    static final String JAI_PRODUCT_NULL = "org.eclipse.imagen";
 
     /** Logger associated to the class*/
     private static final Logger LOGGER = Logger.getLogger(ConcurrentOperationRegistry.class.toString());
@@ -809,17 +809,17 @@ public final class ConcurrentOperationRegistry extends OperationRegistry {
                     // If the parameter is an instance of one of the JAI-EXT Interpolation classes
                     // then it is transformed into the related JAI Interpolation class.
                     if (param instanceof InterpolationNearest) {
-                        interp = new javax.media.jai.InterpolationNearest();
+                        interp = new org.eclipse.imagen.InterpolationNearest();
                     } else if (param instanceof InterpolationBilinear) {
                         InterpolationBilinear bil = (InterpolationBilinear) param;
-                        interp = new javax.media.jai.InterpolationBilinear(bil.getSubsampleBitsH());
+                        interp = new org.eclipse.imagen.InterpolationBilinear(bil.getSubsampleBitsH());
                     } else if (param instanceof InterpolationBicubic) {
                         InterpolationBicubic bic = (InterpolationBicubic) param;
                         if (bic.isBicubic2()) {
-                            interp = new javax.media.jai.InterpolationBicubic2(
+                            interp = new org.eclipse.imagen.InterpolationBicubic2(
                                     bic.getSubsampleBitsH());
                         } else {
-                            interp = new javax.media.jai.InterpolationBicubic(
+                            interp = new org.eclipse.imagen.InterpolationBicubic(
                                     bic.getSubsampleBitsH());
                         }
                     }

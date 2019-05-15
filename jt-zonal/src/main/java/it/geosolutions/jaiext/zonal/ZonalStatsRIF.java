@@ -27,10 +27,10 @@ import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderedImageFactory;
 import java.util.List;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.ROI;
 
-import com.sun.media.jai.opimage.RIFUtil;
+import org.eclipse.imagen.media.opimage.RIFUtil;
 
 /**
  * This class is a RenderedImageFactory called by the JAI.create() method when the "Zonal" operation is requested. When called, the create() method

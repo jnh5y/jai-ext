@@ -36,12 +36,12 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
 
 import it.geosolutions.jaiext.utilities.shape.LiteShape;
 

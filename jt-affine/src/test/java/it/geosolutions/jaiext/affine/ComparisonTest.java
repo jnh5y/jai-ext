@@ -34,12 +34,12 @@ import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.range.RangeFactory;
 import it.geosolutions.jaiext.testclasses.TestData;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RenderedOp;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -102,19 +102,19 @@ public class ComparisonTest extends TestAffine{
     private static AffineTransform scaleTransform;
 
     /** JAI nearest Interpolator */
-    private static javax.media.jai.InterpolationNearest interpNearOld;
+    private static org.eclipse.imagen.InterpolationNearest interpNearOld;
 
     /** New nearest Interpolator */
     private static InterpolationNearest interpNearNew;
 
     /** JAI bilinear Interpolator */
-    private static javax.media.jai.InterpolationBilinear interpBilOld;
+    private static org.eclipse.imagen.InterpolationBilinear interpBilOld;
 
     /** New bilinear Interpolator */
     private static InterpolationBilinear interpBilNew;
 
     /** JAI bicubic Interpolator */
-    private static javax.media.jai.InterpolationBicubic interpBicOld;
+    private static org.eclipse.imagen.InterpolationBicubic interpBicOld;
 
     /** New bicubic Interpolator */
     private static InterpolationBicubic interpBicNew;
@@ -138,14 +138,14 @@ public class ComparisonTest extends TestAffine{
         }
 
         // Interpolators instantiation
-        interpNearOld = new javax.media.jai.InterpolationNearest();
+        interpNearOld = new org.eclipse.imagen.InterpolationNearest();
         interpNearNew = new InterpolationNearest(rangeND, false, destinationNoData, dataType);
 
-        interpBilOld = new javax.media.jai.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
+        interpBilOld = new org.eclipse.imagen.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
         interpBilNew = new InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS, rangeND, false,
                 destinationNoData, dataType);
 
-        interpBicOld = new javax.media.jai.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
+        interpBicOld = new org.eclipse.imagen.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
         interpBicNew = new InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS, rangeND, false,
                 destinationNoData, dataType, false, DEFAULT_PRECISION_BITS);
 
@@ -472,13 +472,13 @@ public class ComparisonTest extends TestAffine{
 
         String interpType = "";
 
-        if (interp instanceof javax.media.jai.InterpolationBilinear
+        if (interp instanceof org.eclipse.imagen.InterpolationBilinear
                 || interp instanceof InterpolationBilinear) {
             interpType = "Bilinear";
-        } else if (interp instanceof javax.media.jai.InterpolationBicubic
+        } else if (interp instanceof org.eclipse.imagen.InterpolationBicubic
                 || interp instanceof InterpolationBicubic) {
             interpType = "Bicubic";
-        } else if (interp instanceof javax.media.jai.InterpolationNearest
+        } else if (interp instanceof org.eclipse.imagen.InterpolationNearest
                 || interp instanceof InterpolationNearest) {
             interpType = "Nearest";
         }
@@ -489,13 +489,13 @@ public class ComparisonTest extends TestAffine{
             description = "Old Affine";
             if (NATIVE_ACCELERATION) {
                 description += " accelerated ";
-                System.setProperty("com.sun.media.jai.disableMediaLib", "false");
+                System.setProperty("org.eclipse.imagen.media.disableMediaLib", "false");
             } else {
-                System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+                System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
             }
         } else {
             description = "New Affine";
-            System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+            System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
         }
 
         AffineTransform transform = new AffineTransform();
@@ -534,7 +534,7 @@ public class ComparisonTest extends TestAffine{
             // creation of the image with the selected interpolator
 
             if (old) {
-                imageAffine = javax.media.jai.operator.AffineDescriptor.create(image, transform,
+                imageAffine = org.eclipse.imagen.operator.AffineDescriptor.create(image, transform,
                         interp, destinationNoDataArray, hints);
             } else {
                 imageAffine = AffineDescriptor.create(image, transform, interp,

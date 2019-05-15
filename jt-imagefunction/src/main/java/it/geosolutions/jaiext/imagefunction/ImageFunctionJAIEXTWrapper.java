@@ -21,8 +21,8 @@ import java.awt.Rectangle;
 
 import it.geosolutions.jaiext.range.Range;
 
-import javax.media.jai.ImageFunction;
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ImageFunction;
+import org.eclipse.imagen.ROI;
 
 /**
  * Wrapper function used for wrapping {@link ImageFunction} objects in order to implement {@link ImageFunctionJAIEXT} interface.

@@ -27,7 +27,7 @@ import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.RasterFormatTag;
+import org.eclipse.imagen.RasterFormatTag;
 
 import org.junit.Test;
 

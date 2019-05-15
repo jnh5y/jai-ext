@@ -31,17 +31,17 @@ import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
 import java.util.Arrays;
 
-import javax.media.jai.ColormapOpImage;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.iterator.RandomIter;
-import javax.media.jai.iterator.RectIter;
-import javax.media.jai.iterator.RectIterFactory;
-import javax.media.jai.iterator.WritableRectIter;
+import org.eclipse.imagen.ColormapOpImage;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.iterator.RandomIter;
+import org.eclipse.imagen.iterator.RectIter;
+import org.eclipse.imagen.iterator.RectIterFactory;
+import org.eclipse.imagen.iterator.WritableRectIter;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 /**
  * Images are created using the {@code GenericPiecewise.CRIF} inner class, where "CRIF" stands for

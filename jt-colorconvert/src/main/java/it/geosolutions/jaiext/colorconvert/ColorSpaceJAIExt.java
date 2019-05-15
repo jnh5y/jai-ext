@@ -28,16 +28,16 @@ import java.awt.image.Raster;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 
-import javax.media.jai.ColorSpaceJAI;
-import javax.media.jai.PixelAccessor;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RasterFactory;
-import javax.media.jai.UnpackedImageData;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.ColorSpaceJAI;
+import org.eclipse.imagen.PixelAccessor;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RasterFactory;
+import org.eclipse.imagen.UnpackedImageData;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 /**
  * Abstract class extending the {@link ColorSpaceJAI} class in order to add support for external ROI or NoData.

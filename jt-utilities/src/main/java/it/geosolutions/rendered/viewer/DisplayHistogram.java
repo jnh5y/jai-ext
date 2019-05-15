@@ -28,9 +28,9 @@ import java.awt.RenderingHints;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 
-import javax.media.jai.Histogram;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.operator.HistogramDescriptor;
+import org.eclipse.imagen.Histogram;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.operator.HistogramDescriptor;
 import javax.swing.JComponent;
 
 

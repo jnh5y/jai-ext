@@ -26,14 +26,14 @@ import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderableImage;
 import java.util.List;
 
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderableOp;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderableRegistryMode;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderableOp;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderableRegistryMode;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * An <code>OperationDescriptor</code> describing the "BandMerge" operation.
@@ -129,7 +129,7 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * <td>null</td>
  * <tr>
  * <td>roi</td>
- * <td>javax.media.jai.ROI</td>
+ * <td>org.eclipse.imagen.ROI</td>
  * <td>null</td>
  * <tr>
  * <tr>
@@ -137,7 +137,7 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * </p>
  * <p>
  * 
- * @see javax.media.jai.OperationDescriptor
+ * @see org.eclipse.imagen.OperationDescriptor
  * 
  */
 public class BandMergeDescriptor extends OperationDescriptorImpl {
@@ -168,7 +168,7 @@ public class BandMergeDescriptor extends OperationDescriptorImpl {
      * Input Parameter class
      */
     private static final Class[] paramClasses = { it.geosolutions.jaiext.range.Range[].class,
-            Double.class, List.class, javax.media.jai.ROI.class, Boolean.class };
+            Double.class, List.class, org.eclipse.imagen.ROI.class, Boolean.class };
 
     /**
      * Input Parameter default values

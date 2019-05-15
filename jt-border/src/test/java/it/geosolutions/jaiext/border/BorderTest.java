@@ -28,8 +28,8 @@ import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.io.IOException;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.RenderedOp;
 
 import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.range.RangeFactory;

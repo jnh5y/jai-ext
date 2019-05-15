@@ -24,12 +24,12 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderedImageFactory;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.KernelJAI;
-import javax.media.jai.LookupTableJAI;
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.KernelJAI;
+import org.eclipse.imagen.LookupTableJAI;
+import org.eclipse.imagen.ROI;
 
-import com.sun.media.jai.opimage.RIFUtil;
+import org.eclipse.imagen.media.opimage.RIFUtil;
 
 /**
  * {@link RenderedImageFactory} implementation for the Error diffusion operation

@@ -23,12 +23,12 @@ import java.awt.RenderingHints;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * {@link OperationDescriptorImpl} for the GenericPiecewise operation.
@@ -52,7 +52,7 @@ public class GenericPiecewiseDescriptor extends OperationDescriptorImpl {
                 { "Version", "1.0" } }, new String[] { RenderedRegistryMode.MODE_NAME }, 1,
                 new String[] { "Domain1D", "bandIndex", "roi", "nodata" }, // Argument
                                                                            // names
-                new Class[] { PiecewiseTransform1D.class, Integer.class, javax.media.jai.ROI.class,
+                new Class[] { PiecewiseTransform1D.class, Integer.class, org.eclipse.imagen.ROI.class,
                         it.geosolutions.jaiext.range.Range.class }, // Argument
                                                                     // classes
                 new Object[] { NO_PARAMETER_DEFAULT, new Integer(-1), null, null }, // Default values for parameters,

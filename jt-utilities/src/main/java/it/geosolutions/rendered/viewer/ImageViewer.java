@@ -34,8 +34,8 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
-import javax.media.jai.iterator.RandomIter;
-import javax.media.jai.iterator.RandomIterFactory;
+import org.eclipse.imagen.iterator.RandomIter;
+import org.eclipse.imagen.iterator.RandomIterFactory;
 import javax.swing.JButton;
 import javax.swing.JFileChooser;
 import javax.swing.JLabel;

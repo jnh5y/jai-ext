@@ -23,14 +23,14 @@ import java.awt.RenderingHints;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.KernelJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.KernelJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 public class SeparableConvolveOpImage extends ConvolveOpImage {
     

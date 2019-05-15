@@ -28,12 +28,12 @@ import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.stream.FileImageInputStream;
-import javax.media.jai.BorderExtender;
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
 
 import org.junit.Test;
 
@@ -171,11 +171,11 @@ public class ImageRGBTest extends TestScale2 {
         switch (interpType) {
         case NEAREST_INTERP:
             // Nearest-Neighbor
-            interp = new javax.media.jai.InterpolationNearest();
+            interp = new org.eclipse.imagen.InterpolationNearest();
             break;
         case BILINEAR_INTERP:
             // Bilinear
-            interp = new javax.media.jai.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
+            interp = new org.eclipse.imagen.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
             if (hints != null) {
                 hints.add(new RenderingHints(JAI.KEY_BORDER_EXTENDER, BorderExtender
                         .createInstance(BorderExtender.BORDER_COPY)));
@@ -187,7 +187,7 @@ public class ImageRGBTest extends TestScale2 {
             break;
         case BICUBIC_INTERP:
             // Bicubic
-            interp = new javax.media.jai.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
+            interp = new org.eclipse.imagen.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
             if (hints != null) {
                 hints.add(new RenderingHints(JAI.KEY_BORDER_EXTENDER, BorderExtender
                         .createInstance(BorderExtender.BORDER_COPY)));

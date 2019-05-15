@@ -25,10 +25,10 @@ import it.geosolutions.jaiext.testclasses.TestBase;
 
 import java.awt.Rectangle;
 
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.iterator.RandomIter;
 
 import org.junit.Test;
 

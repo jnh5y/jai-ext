@@ -26,12 +26,12 @@ import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 import java.io.Serializable;
 
-import javax.media.jai.LookupTableJAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFactory;
-import javax.media.jai.RasterFormatTag;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.LookupTableJAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFactory;
+import org.eclipse.imagen.RasterFormatTag;
+import org.eclipse.imagen.iterator.RandomIter;
 
 import it.geosolutions.jaiext.iterators.RandomIterFactory;
 import it.geosolutions.jaiext.range.Range;

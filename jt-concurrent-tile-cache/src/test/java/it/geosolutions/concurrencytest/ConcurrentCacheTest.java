@@ -31,17 +31,17 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.imageio.stream.FileImageInputStream;
-import javax.media.jai.InterpolationNearest;
-import javax.media.jai.JAI;
-import javax.media.jai.TileCache;
-import javax.media.jai.operator.ScaleDescriptor;
+import org.eclipse.imagen.InterpolationNearest;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.TileCache;
+import org.eclipse.imagen.operator.ScaleDescriptor;
 
 import org.junit.Test;
 
 import com.sun.media.imageio.plugins.tiff.TIFFImageReadParam;
 import com.sun.media.imageioimpl.plugins.tiff.TIFFImageReader;
 import com.sun.media.imageioimpl.plugins.tiff.TIFFImageReaderSpi;
-import com.sun.media.jai.util.SunTileCache;
+import org.eclipse.imagen.media.util.SunTileCache;
 
 import it.geosolutions.concurrent.ConcurrentTileCache;
 import it.geosolutions.concurrent.ConcurrentTileCacheMultiMap;

@@ -25,16 +25,16 @@ import java.awt.RenderingHints;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PropertyGenerator;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PropertyGenerator;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
-import com.sun.media.jai.util.PropertyGeneratorImpl;
+import org.eclipse.imagen.media.util.PropertyGeneratorImpl;
 
 /**
  * This class is used for retrieving an eventual ROI object passed to the source image by calling the getProperty() method. This method checks if the
@@ -280,7 +280,7 @@ public class StatisticsDescriptor extends OperationDescriptorImpl {
 
     /** The parameter class list for this operation. */
     private static final Class[] paramClasses = { java.lang.Integer.class, java.lang.Integer.class,
-            javax.media.jai.ROI.class, it.geosolutions.jaiext.range.Range.class,
+            org.eclipse.imagen.ROI.class, it.geosolutions.jaiext.range.Range.class,
             java.lang.Boolean.class, int[].class,
             it.geosolutions.jaiext.stats.Statistics.StatsType[].class, double[].class,
             double[].class, int[].class, };

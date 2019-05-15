@@ -52,7 +52,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.media.jai.TiledImage;
+import org.eclipse.imagen.TiledImage;
 
 import it.geosolutions.jaiext.swing.ImageFrame;
 import it.geosolutions.jaiext.utilities.ImageUtilities;

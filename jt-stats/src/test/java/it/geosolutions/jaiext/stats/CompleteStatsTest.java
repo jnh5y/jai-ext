@@ -27,8 +27,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
 
 import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.range.RangeFactory;

@@ -45,10 +45,10 @@ package it.geosolutions.jaiext.jiffleop;
 
 import java.awt.image.renderable.RenderedImageFactory;
 
-import javax.media.jai.OperationDescriptor;
-import javax.media.jai.OperationRegistry;
-import javax.media.jai.OperationRegistrySpi;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.OperationDescriptor;
+import org.eclipse.imagen.OperationRegistry;
+import org.eclipse.imagen.OperationRegistrySpi;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * OperationRegistrySpi implementation to register the "Jiffle"

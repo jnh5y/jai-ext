@@ -26,8 +26,8 @@ import java.awt.image.SampleModel;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderedImageFactory;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
 
 import org.locationtech.jts.geom.Geometry;
 import org.locationtech.jts.geom.Polygonal;

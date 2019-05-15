@@ -29,8 +29,8 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.util.Arrays;
 
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFormatTag;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFormatTag;
 
 import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.range.RangeFactory;

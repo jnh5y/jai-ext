@@ -22,13 +22,13 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderableImage;
 
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.RenderableOp;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderableRegistryMode;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.RenderableOp;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderableRegistryMode;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * An <code>OperationDescriptor</code> describing the "BandSelect" operation.
@@ -58,10 +58,10 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * <tr><th>Name</th>        <th>Value</th></tr>
  * <tr><td>GlobalName</td>  <td>BandSelect</td></tr>
  * <tr><td>LocalName</td>   <td>BandSelect</td></tr>
- * <tr><td>Vendor</td>      <td>com.sun.media.jai</td></tr>
+ * <tr><td>Vendor</td>      <td>org.eclipse.imagen.media</td></tr>
  * <tr><td>Description</td> <td>Selects n number of bands from
  *                              an image.</td></tr>
- * <tr><td>DocURL</td>      <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/BandSelectDescriptor.html</td></tr>
+ * <tr><td>DocURL</td>      <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/BandSelectDescriptor.html</td></tr>
  * <tr><td>Version</td>     <td>1.0</td></tr>
  * <tr><td>arg0Desc</td>    <td>The indices of the selected bands.</td></tr>
  * </table></p>
@@ -74,7 +74,7 @@ import javax.media.jai.registry.RenderedRegistryMode;
  *                          <td>NO_PARAMETER_DEFAULT</td>
  * </table></p>
  *
- * @see javax.media.jai.OperationDescriptor
+ * @see org.eclipse.imagen.OperationDescriptor
  */
 public class BandSelectDescriptor extends OperationDescriptorImpl {
 
@@ -90,7 +90,7 @@ public class BandSelectDescriptor extends OperationDescriptorImpl {
         {"LocalName",   "BandSelect"},
         {"Vendor",      "it.geosolutions.jaiext"},
         {"Description", JaiI18N.getString("BandSelectDescriptor0")},
-        {"DocURL",      "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/BandSelectDescriptor.html"},
+        {"DocURL",      "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/BandSelectDescriptor.html"},
         {"Version",     JaiI18N.getString("DescriptorVersion")},
         {"arg0Desc",    JaiI18N.getString("BandSelectDescriptor1")}
     };

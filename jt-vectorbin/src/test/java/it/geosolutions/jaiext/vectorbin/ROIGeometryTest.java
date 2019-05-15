@@ -46,15 +46,15 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TileScheduler;
-import javax.media.jai.operator.ExtremaDescriptor;
-import javax.media.jai.operator.FormatDescriptor;
-import javax.media.jai.operator.SubtractDescriptor;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TileScheduler;
+import org.eclipse.imagen.operator.ExtremaDescriptor;
+import org.eclipse.imagen.operator.FormatDescriptor;
+import org.eclipse.imagen.operator.SubtractDescriptor;
 import it.geosolutions.jaiext.vectorbin.ROIGeometry;
 import it.geosolutions.jaiext.utilities.shape.LiteShape;
 

@@ -31,8 +31,8 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 
-import javax.media.jai.ROIShape;
-import javax.media.jai.TiledImage;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.TiledImage;
 
 import org.junit.BeforeClass;
 

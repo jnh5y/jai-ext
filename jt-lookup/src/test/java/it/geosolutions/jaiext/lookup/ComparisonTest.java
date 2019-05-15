@@ -25,10 +25,10 @@ import it.geosolutions.jaiext.testclasses.TestBase;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.JAI;
-import javax.media.jai.LookupTableJAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.LookupTableJAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RenderedOp;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -280,13 +280,13 @@ public class ComparisonTest extends TestBase {
             description = "Old Lookup";
             if (NATIVE_ACCELERATION) {
                 description += " accelerated ";
-                System.setProperty("com.sun.media.jai.disableMediaLib", "false");
+                System.setProperty("org.eclipse.imagen.media.disableMediaLib", "false");
             } else {
-                System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+                System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
             }
         } else {
             description = "New Lookup";
-            System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+            System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
         }
         // Data type string
         String dataTypeString = "";
@@ -320,7 +320,7 @@ public class ComparisonTest extends TestBase {
             // creation of the image with the selected descriptor
 
             if (old) {
-                imageLookup = javax.media.jai.operator.LookupDescriptor.create(testIMG,
+                imageLookup = org.eclipse.imagen.operator.LookupDescriptor.create(testIMG,
                         (LookupTableJAI) table, null);
             } else {
                 imageLookup = LookupDescriptor.create(testIMG, (LookupTable) table,

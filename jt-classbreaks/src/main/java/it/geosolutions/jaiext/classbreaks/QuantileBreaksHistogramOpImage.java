@@ -38,7 +38,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.TreeSet;
 
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ROI;
 
 import it.geosolutions.jaiext.classbreaks.HistogramClassification.Bucket;
 

@@ -25,9 +25,9 @@ import org.junit.Test;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.RenderedOp;
-import javax.media.jai.iterator.RandomIter;
-import javax.media.jai.iterator.RandomIterFactory;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.iterator.RandomIter;
+import org.eclipse.imagen.iterator.RandomIterFactory;
 
 import it.geosolutions.jaiext.jiffle.runtime.BandTransform;
 import it.geosolutions.jaiext.testclasses.TestBase;

@@ -17,7 +17,7 @@
 
 package it.geosolutions.jaiext.shadedrelief;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.shadedrelief.ShadedReliefAlgorithm.DataProcessor;
 import it.geosolutions.jaiext.shadedrelief.ShadedReliefAlgorithm.DataProcessorByte;
@@ -35,19 +35,19 @@ import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
 import java.util.Arrays;
-import javax.media.jai.AreaOpImage;
-import javax.media.jai.BorderExtender;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.IntegerSequence;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFormatTag;
-import javax.media.jai.iterator.RandomIter;
-import javax.media.jai.iterator.RandomIterFactory;
-import javax.media.jai.operator.BorderDescriptor;
+import org.eclipse.imagen.AreaOpImage;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.IntegerSequence;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFormatTag;
+import org.eclipse.imagen.iterator.RandomIter;
+import org.eclipse.imagen.iterator.RandomIterFactory;
+import org.eclipse.imagen.operator.BorderDescriptor;
 
 /**
  * ShadedRelief op Image.

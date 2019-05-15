@@ -27,16 +27,16 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.util.Map;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.Interpolation;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.Warp;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.Warp;
+import org.eclipse.imagen.iterator.RandomIter;
 
 /**
- * An <code>OpImage</code> implementing the general "Warp" operation as described in <code>javax.media.jai.operator.WarpDescriptor</code>. It supports
+ * An <code>OpImage</code> implementing the general "Warp" operation as described in <code>org.eclipse.imagen.operator.WarpDescriptor</code>. It supports
  * the nearest-neighbor interpolation.
  * 
  * <p>
@@ -45,9 +45,9 @@ import javax.media.jai.iterator.RandomIter;
  * If a backward mapped pixel lies outside ROI or it is a NoData, then the destination pixel value is a background value.
  * 
  * @since EA2
- * @see javax.media.jai.Warp
- * @see javax.media.jai.WarpOpImage
- * @see javax.media.jai.operator.WarpDescriptor
+ * @see org.eclipse.imagen.Warp
+ * @see org.eclipse.imagen.WarpOpImage
+ * @see org.eclipse.imagen.operator.WarpDescriptor
  * @see WarpRIF
  * 
  */

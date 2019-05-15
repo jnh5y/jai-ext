@@ -31,17 +31,17 @@ import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 import java.util.Map;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.Interpolation;
-import javax.media.jai.InterpolationBicubic2;
-import javax.media.jai.InterpolationTable;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFormatTag;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.InterpolationBicubic2;
+import org.eclipse.imagen.InterpolationTable;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFormatTag;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
-import com.sun.media.jai.util.Rational;
+import org.eclipse.imagen.media.util.ImageUtil;
+import org.eclipse.imagen.media.util.Rational;
 
 import it.geosolutions.jaiext.interpolators.InterpolationBicubic;
 import it.geosolutions.jaiext.interpolators.InterpolationBilinear;

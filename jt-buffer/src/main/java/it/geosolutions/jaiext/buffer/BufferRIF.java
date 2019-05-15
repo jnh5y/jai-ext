@@ -28,14 +28,14 @@ import java.awt.image.renderable.RenderedImageFactory;
 import java.util.List;
 import java.util.Map;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RasterFactory;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RasterFactory;
 
-import com.sun.media.jai.opimage.RIFUtil;
-import com.sun.media.jai.util.JDKWorkarounds;
+import org.eclipse.imagen.media.opimage.RIFUtil;
+import org.eclipse.imagen.media.util.JDKWorkarounds;
 
 public class BufferRIF implements RenderedImageFactory {
 

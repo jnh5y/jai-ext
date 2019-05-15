@@ -24,8 +24,8 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.awt.image.Raster;
 
-import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.BandSelectDescriptor;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.operator.BandSelectDescriptor;
 
 import org.junit.Test;
 

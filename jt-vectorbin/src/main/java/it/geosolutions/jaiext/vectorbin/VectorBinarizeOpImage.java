@@ -24,9 +24,9 @@ import org.locationtech.jts.geom.impl.CoordinateArraySequence;
 import org.locationtech.jts.geom.impl.PackedCoordinateSequence;
 import org.locationtech.jts.geom.prep.PreparedGeometry;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.RasterFactory;
-import javax.media.jai.SourcelessOpImage;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.RasterFactory;
+import org.eclipse.imagen.SourcelessOpImage;
 import java.awt.*;
 import java.awt.image.*;
 import java.util.Arrays;

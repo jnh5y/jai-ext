@@ -36,12 +36,12 @@ import java.awt.image.RenderedImage;
 import java.io.File;
 import java.io.IOException;
 
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.FormatDescriptor;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.operator.FormatDescriptor;
 
 import junit.framework.Assert;
 

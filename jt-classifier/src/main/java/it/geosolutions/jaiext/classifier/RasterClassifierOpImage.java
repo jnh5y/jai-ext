@@ -25,9 +25,9 @@ import java.awt.image.ColorModel;
 import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ROI;
 
 /**
  * This class provides a few initialization method used for implementing the RasterClassier operation, which is an extension of the GenericPiecewise

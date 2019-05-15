@@ -29,16 +29,16 @@ import java.awt.image.WritableRaster;
 import java.util.Arrays;
 import java.util.Map;
 
-import javax.media.jai.ColormapOpImage;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFormatTag;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.ColormapOpImage;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFormatTag;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 /**
  * An <code>OpImage</code> implementing any operation defined by the {@link Operator} enum on an image with a constant value array.

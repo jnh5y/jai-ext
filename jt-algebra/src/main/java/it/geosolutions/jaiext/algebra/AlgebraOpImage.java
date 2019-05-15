@@ -26,18 +26,18 @@ import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.PointOpImage;
-import javax.media.jai.ROI;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFormatTag;
-import javax.media.jai.RasterFactory;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.PointOpImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFormatTag;
+import org.eclipse.imagen.RasterFactory;
 import java.util.Map;
 import java.util.Vector;
 import java.util.logging.Logger;
 
-import com.sun.media.jai.util.ImageUtil;
-import com.sun.media.jai.util.JDKWorkarounds;
+import org.eclipse.imagen.media.util.ImageUtil;
+import org.eclipse.imagen.media.util.JDKWorkarounds;
 
 /**
  * An <code>OpImage</code> implementing any operation defined by the {@link Operator} enum on an image array.

@@ -139,7 +139,7 @@ public class PropertyUtil {
         return null;
     } 
     
-    /** Get bundle from .properties files in javax/media/jai dir. */
+    /** Get bundle from .properties files in org.eclipse.imagen dir. */
     private static ResourceBundle getBundle(String packageName) {
         ResourceBundle bundle = null;
         

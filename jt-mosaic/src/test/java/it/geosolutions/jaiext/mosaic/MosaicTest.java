@@ -21,8 +21,8 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-import static javax.media.jai.operator.MosaicDescriptor.MOSAIC_TYPE_BLEND;
-import static javax.media.jai.operator.MosaicDescriptor.MOSAIC_TYPE_OVERLAY;
+import static org.eclipse.imagen.operator.MosaicDescriptor.MOSAIC_TYPE_BLEND;
+import static org.eclipse.imagen.operator.MosaicDescriptor.MOSAIC_TYPE_OVERLAY;
 
 import org.junit.Test;
 
@@ -37,18 +37,18 @@ import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.BandMergeDescriptor;
-import javax.media.jai.operator.BandSelectDescriptor;
-import javax.media.jai.operator.FormatDescriptor;
-import javax.media.jai.operator.MosaicType;
-import javax.media.jai.operator.TranslateDescriptor;
-import javax.media.jai.util.ImagingException;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.operator.BandMergeDescriptor;
+import org.eclipse.imagen.operator.BandSelectDescriptor;
+import org.eclipse.imagen.operator.FormatDescriptor;
+import org.eclipse.imagen.operator.MosaicType;
+import org.eclipse.imagen.operator.TranslateDescriptor;
+import org.eclipse.imagen.util.ImagingException;
 
 import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.range.RangeFactory;

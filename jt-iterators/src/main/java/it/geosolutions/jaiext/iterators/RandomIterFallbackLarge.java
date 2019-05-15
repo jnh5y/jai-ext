@@ -24,8 +24,8 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.util.Arrays;
 
-import javax.media.jai.PlanarImage;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.iterator.RandomIter;
 /**
  * Slight modified version of JAI {@link RandomIterFallbackNoCacheNoArray} that uses byte vectors to handle indexes rather than int vector. This way we use 4x4
  * times less memory in the iterator

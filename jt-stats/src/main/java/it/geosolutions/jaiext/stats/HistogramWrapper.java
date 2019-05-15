@@ -1,6 +1,6 @@
 package it.geosolutions.jaiext.stats;
 
-import javax.media.jai.Histogram;
+import org.eclipse.imagen.Histogram;
 
 public class HistogramWrapper extends Histogram {
 

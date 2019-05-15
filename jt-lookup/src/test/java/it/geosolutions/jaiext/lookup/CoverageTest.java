@@ -21,7 +21,7 @@ import it.geosolutions.jaiext.testclasses.TestBase;
 import java.awt.Rectangle;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
-import javax.media.jai.ROIShape;
+import org.eclipse.imagen.ROIShape;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

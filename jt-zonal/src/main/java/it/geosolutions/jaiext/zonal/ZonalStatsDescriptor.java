@@ -24,12 +24,12 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.util.List;
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * An <code>OperationDescriptor</code> describing the Zonal Statistics operation.
@@ -184,7 +184,7 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * <td>null</td>
  * <tr>
  * <td>mask</td>
- * <td>javax.media.jai.ROI</td>
+ * <td>org.eclipse.imagen.ROI</td>
  * <td>null</td>
  * <tr>
  * <td>useROIAccessor</td>
@@ -263,7 +263,7 @@ public class ZonalStatsDescriptor extends OperationDescriptorImpl {
     /** The parameter class list for this operation. */
     private static final Class[] paramClasses = { RenderedImage.class, AffineTransform.class,
             java.util.List.class, it.geosolutions.jaiext.range.Range.class,
-            javax.media.jai.ROI.class, Boolean.class, int[].class,
+            org.eclipse.imagen.ROI.class, Boolean.class, int[].class,
             it.geosolutions.jaiext.stats.Statistics.StatsType[].class, double[].class,
             double[].class, int[].class, java.util.List.class, Boolean.class };
 

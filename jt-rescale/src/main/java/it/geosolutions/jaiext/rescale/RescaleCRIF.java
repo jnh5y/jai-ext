@@ -21,11 +21,11 @@ import java.awt.RenderingHints;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 
-import javax.media.jai.CRIFImpl;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.ROI;
+import org.eclipse.imagen.CRIFImpl;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.ROI;
 
-import com.sun.media.jai.opimage.RIFUtil;
+import org.eclipse.imagen.media.opimage.RIFUtil;
 
 import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.range.RangeFactory;

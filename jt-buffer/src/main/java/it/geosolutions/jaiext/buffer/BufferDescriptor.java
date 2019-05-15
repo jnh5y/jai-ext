@@ -24,13 +24,13 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.util.List;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 public class BufferDescriptor extends OperationDescriptorImpl {
 
@@ -63,7 +63,7 @@ public class BufferDescriptor extends OperationDescriptorImpl {
             "rois", "nodata", "destNoData", "valueToCount", "type", "pixelArea" };
 
     /** The parameter class types for the "Warp" operation. */
-    private static final Class[] paramClasses = { javax.media.jai.BorderExtender.class,
+    private static final Class[] paramClasses = { org.eclipse.imagen.BorderExtender.class,
             java.lang.Integer.class, java.lang.Integer.class, java.lang.Integer.class,
             java.lang.Integer.class, java.util.List.class,
             it.geosolutions.jaiext.range.Range.class, java.lang.Double.class,

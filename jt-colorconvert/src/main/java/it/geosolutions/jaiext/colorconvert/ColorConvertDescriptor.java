@@ -25,14 +25,14 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderableImage;
 
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderableOp;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderableRegistryMode;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderableOp;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderableRegistryMode;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * An <code>OperationDescriptor</code> describing the "ColorConvert" operation.
@@ -89,7 +89,7 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * </tr>
  * <tr>
  * <td>DocURL</td>
- * <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/ColorConvertDescriptor.html</td>
+ * <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/ColorConvertDescriptor.html</td>
  * </tr>
  * <tr>
  * <td>Version</td>
@@ -129,7 +129,7 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * </tr>
  * <tr>
  * <td>roi</td>
- * <td>javax.media.jai.ROI</td>
+ * <td>org.eclipse.imagen.ROI</td>
  * <td>null</td>
  * </tr>
  * <tr>
@@ -159,13 +159,13 @@ public class ColorConvertDescriptor extends OperationDescriptorImpl {
                                 "Converts the colorspace of an Image taking into account ROI and NoData" },
                         {
                                 "DocURL",
-                                "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/ColorConvertDescriptor.html" },
+                                "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/ColorConvertDescriptor.html" },
                         { "Version", "1.0" },
                         { "arg0Desc", "Destination ColorModel" },
                         { "arg1Desc", "Input ROI used in calculations" },
                         { "arg2Desc", "No data range used for checking if the a pixel is a nodata" },
                         { "arg3Desc", "Output value for nodata" } }, 1, new Class[] {
-                        java.awt.image.ColorModel.class, javax.media.jai.ROI.class,
+                        java.awt.image.ColorModel.class, org.eclipse.imagen.ROI.class,
                         it.geosolutions.jaiext.range.Range.class, double[].class }, new String[] {
                         "colorModel", "roi", "nodata", "destNoData" }, new Object[] {
                         NO_PARAMETER_DEFAULT, null, null, new double[] { 0.0d } });

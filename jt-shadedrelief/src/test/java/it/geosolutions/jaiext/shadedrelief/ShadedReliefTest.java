@@ -28,10 +28,10 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.util.logging.Logger;
 
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TiledImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TiledImage;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -45,7 +45,7 @@ import java.awt.image.ComponentSampleModel;
 import java.awt.image.renderable.ParameterBlock;
 import java.util.ArrayList;
 import java.util.List;
-import javax.media.jai.JAI;
+import org.eclipse.imagen.JAI;
 import org.junit.AfterClass;
 
 public class ShadedReliefTest extends TestBase {

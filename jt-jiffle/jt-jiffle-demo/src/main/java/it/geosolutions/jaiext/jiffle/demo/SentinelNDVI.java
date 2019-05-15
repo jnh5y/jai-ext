@@ -1,6 +1,6 @@
 package it.geosolutions.jaiext.jiffle.demo;
 
-import com.sun.media.jai.operator.ImageReadDescriptor;
+import org.eclipse.imagen.media.operator.ImageReadDescriptor;
 
 import java.awt.image.RenderedImage;
 import java.io.File;
@@ -10,10 +10,10 @@ import java.text.NumberFormat;
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
 import javax.imageio.stream.FileImageInputStream;
-import javax.media.jai.JAI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TileCache;
-import javax.media.jai.TiledImage;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TileCache;
+import org.eclipse.imagen.TiledImage;
 
 import it.geosolutions.jaiext.jiffle.JiffleBuilder;
 import it.geosolutions.jaiext.jiffle.JiffleException;

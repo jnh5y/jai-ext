@@ -24,9 +24,9 @@ import it.geosolutions.jaiext.testclasses.TestBase;
 import java.awt.Dimension;
 import java.awt.image.Raster;
 
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.RenderedOp;
 
 import org.locationtech.jts.geom.GeometryFactory;
 import org.locationtech.jts.geom.Point;

@@ -30,12 +30,12 @@ import java.awt.image.WritableRaster;
 import java.util.Arrays;
 import java.util.Map;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.Interpolation;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFormatTag;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFormatTag;
+import org.eclipse.imagen.iterator.RandomIter;
 
 import it.geosolutions.jaiext.interpolators.InterpolationNearest;
 import it.geosolutions.jaiext.iterators.RandomIterFactory;

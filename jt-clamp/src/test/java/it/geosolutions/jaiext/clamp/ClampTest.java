@@ -38,20 +38,20 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.media.jai.InterpolationNearest;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RasterFactory;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TiledImage;
+import org.eclipse.imagen.InterpolationNearest;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RasterFactory;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TiledImage;
 
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 public class ClampTest extends TestBase {
     /** Logger */

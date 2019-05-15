@@ -22,7 +22,7 @@ import it.geosolutions.jaiext.testclasses.TestBase;
 import java.awt.image.DataBuffer;
 import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.RenderedOp;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

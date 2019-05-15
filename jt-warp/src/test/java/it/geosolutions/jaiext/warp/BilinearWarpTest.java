@@ -21,7 +21,7 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.WarpAffine;
+import org.eclipse.imagen.WarpAffine;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;

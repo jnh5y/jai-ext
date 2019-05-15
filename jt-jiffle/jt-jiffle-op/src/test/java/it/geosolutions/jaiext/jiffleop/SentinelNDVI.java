@@ -1,6 +1,6 @@
 package it.geosolutions.jaiext.jiffleop;
 
-import com.sun.media.jai.operator.ImageReadDescriptor;
+import org.eclipse.imagen.media.operator.ImageReadDescriptor;
 
 import java.awt.*;
 import java.awt.image.DataBuffer;
@@ -12,11 +12,11 @@ import java.text.NumberFormat;
 import javax.imageio.ImageIO;
 import javax.imageio.ImageReader;
 import javax.imageio.stream.FileImageInputStream;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TiledImage;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TiledImage;
 
 import it.geosolutions.jaiext.jiffle.JiffleException;
 import it.geosolutions.jaiext.utilities.ImageUtilities;

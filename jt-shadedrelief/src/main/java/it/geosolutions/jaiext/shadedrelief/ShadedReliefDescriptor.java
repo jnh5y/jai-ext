@@ -17,17 +17,17 @@
 
 package it.geosolutions.jaiext.shadedrelief;
 
-import com.sun.media.jai.util.AreaOpPropertyGenerator;
+import org.eclipse.imagen.media.util.AreaOpPropertyGenerator;
 import it.geosolutions.jaiext.range.Range;
 import java.awt.RenderingHints;
 import java.awt.image.RenderedImage;
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PropertyGenerator;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PropertyGenerator;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * An <code>OperationDescriptor</code> describing the "ShadedRelief" operation.
@@ -91,7 +91,7 @@ public class ShadedReliefDescriptor extends OperationDescriptorImpl {
      * The parameter class types for the ShadedRelief operation.
      */
     private static final Class[] paramClasses = {
-        javax.media.jai.ROI.class,
+        org.eclipse.imagen.ROI.class,
         Range.class,
         Double.class,
         Double.class,

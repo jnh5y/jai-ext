@@ -49,8 +49,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
-import javax.media.jai.iterator.RectIter;
-import javax.media.jai.iterator.RectIterFactory;
+import org.eclipse.imagen.iterator.RectIter;
+import org.eclipse.imagen.iterator.RectIterFactory;
 
 import it.geosolutions.jaiext.jiffle.Jiffle;
 

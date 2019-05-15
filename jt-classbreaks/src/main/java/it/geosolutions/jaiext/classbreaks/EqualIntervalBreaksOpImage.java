@@ -34,7 +34,7 @@ package it.geosolutions.jaiext.classbreaks;
 
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ROI;
 
 /** Classification op for the equal interval method. */
 public class EqualIntervalBreaksOpImage extends ClassBreaksOpImage {

@@ -33,10 +33,10 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.media.jai.OperationDescriptor;
-import javax.media.jai.RegistryElementDescriptor;
-import javax.media.jai.RegistryMode;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.OperationDescriptor;
+import org.eclipse.imagen.RegistryElementDescriptor;
+import org.eclipse.imagen.RegistryMode;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * A class to parse the JAI registry file.

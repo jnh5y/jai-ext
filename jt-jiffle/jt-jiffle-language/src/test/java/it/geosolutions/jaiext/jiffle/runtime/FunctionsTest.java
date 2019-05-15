@@ -54,8 +54,8 @@ import java.awt.image.RenderedImage;
 import java.awt.image.WritableRenderedImage;
 import java.util.HashMap;
 
-import javax.media.jai.iterator.RectIter;
-import javax.media.jai.iterator.RectIterFactory;
+import org.eclipse.imagen.iterator.RectIter;
+import org.eclipse.imagen.iterator.RectIterFactory;
 
 import it.geosolutions.jaiext.numeric.CompareOp;
 import it.geosolutions.jaiext.utilities.ImageUtilities;

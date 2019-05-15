@@ -41,17 +41,17 @@ import java.util.SortedSet;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import javax.media.jai.JAI;
-import javax.media.jai.LookupTableJAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PixelAccessor;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RasterFactory;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TiledImage;
-import javax.media.jai.UnpackedImageData;
-import javax.media.jai.iterator.RectIterFactory;
-import javax.media.jai.iterator.WritableRectIter;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.LookupTableJAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PixelAccessor;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RasterFactory;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TiledImage;
+import org.eclipse.imagen.UnpackedImageData;
+import org.eclipse.imagen.iterator.RectIterFactory;
+import org.eclipse.imagen.iterator.WritableRectIter;
 
 import com.sun.media.imageioimpl.common.PackageUtil;
 
@@ -78,7 +78,7 @@ public class ImageUtilities {
 
             try {
                 // explicit disable
-                mediaLib = !Boolean.getBoolean("com.sun.media.jai.disableMediaLib");
+                mediaLib = !Boolean.getBoolean("org.eclipse.imagen.media.disableMediaLib");
 
                 // native libs installed
                 if (mediaLib) {
@@ -102,7 +102,7 @@ public class ImageUtilities {
                     });
                 }
             } catch (Throwable e) {
-                // Because the property com.sun.media.jai.disableMediaLib isn't
+                // Because the property org.eclipse.imagen.media.disableMediaLib isn't
                 // defined as public, the users shouldn't know it. In most of
                 // the cases, it isn't defined, and thus no access permission
                 // is granted to it in the policy file. When JAI is utilized in

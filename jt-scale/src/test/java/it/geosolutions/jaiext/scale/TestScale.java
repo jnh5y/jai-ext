@@ -34,15 +34,15 @@ import java.awt.image.SampleModel;
 import java.awt.image.renderable.ParameterBlock;
 import java.io.IOException;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TiledImage;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TiledImage;
 
 import it.geosolutions.jaiext.range.NoDataContainer;
 import it.geosolutions.jaiext.range.Range;
@@ -233,11 +233,11 @@ public class TestScale extends TestBase {
         switch (interpType) {
         case NEAREST_INTERP:
             // Nearest-Neighbor
-            interp = new javax.media.jai.InterpolationNearest();
+            interp = new org.eclipse.imagen.InterpolationNearest();
             break;
         case BILINEAR_INTERP:
             // Bilinear
-            interp = new javax.media.jai.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
+            interp = new org.eclipse.imagen.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
 
             if (hints != null) {
                 hints.add(new RenderingHints(JAI.KEY_BORDER_EXTENDER, BorderExtender
@@ -250,7 +250,7 @@ public class TestScale extends TestBase {
             break;
         case BICUBIC_INTERP:
             // Bicubic
-            interp = new javax.media.jai.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
+            interp = new org.eclipse.imagen.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
 
             if (hints != null) {
                 hints.add(new RenderingHints(JAI.KEY_BORDER_EXTENDER, BorderExtender

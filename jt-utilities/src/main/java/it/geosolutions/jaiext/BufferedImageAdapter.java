@@ -24,9 +24,9 @@ import java.awt.image.WritableRaster;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RenderedImageAdapter;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RenderedImageAdapter;
 
 /**
  * a {@link RenderedImageAdapter} alternative that works around a bug in {@link BufferedImage} sub-images

@@ -36,14 +36,14 @@ import java.awt.image.WritableRaster;
 import java.util.Arrays;
 import java.util.Map;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.Interpolation;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFormatTag;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFormatTag;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 public class AffineBilinearOpImage extends AffineOpImage {
 
@@ -425,7 +425,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -565,7 +565,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -805,7 +805,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -951,7 +951,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -1242,7 +1242,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -1382,7 +1382,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -1630,7 +1630,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -1779,7 +1779,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -2074,7 +2074,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -2216,7 +2216,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -2460,7 +2460,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -2610,7 +2610,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -2906,7 +2906,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -3048,7 +3048,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -3292,7 +3292,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -3440,7 +3440,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -3723,7 +3723,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -3853,7 +3853,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -4073,7 +4073,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -4211,7 +4211,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -4483,7 +4483,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -4614,7 +4614,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -4836,7 +4836,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();
@@ -4974,7 +4974,7 @@ public class AffineBilinearOpImage extends AffineOpImage {
                     int ifracy = (int) Math.floor(fracy * GEOM_FRAC_MAX);
 
                     // Compute clipMinX, clipMinY
-                    javax.media.jai.util.Range clipRange = performScanlineClipping(src_rect_x1,
+                    org.eclipse.imagen.util.Range clipRange = performScanlineClipping(src_rect_x1,
                             src_rect_y1, src_rect_x2, src_rect_y2, s_ix, s_iy, ifracx, ifracy,
                             dst_min_x, dst_max_x, 0, 1, 0, 1);
                     int clipMinX = ((Integer) clipRange.getMinValue()).intValue();

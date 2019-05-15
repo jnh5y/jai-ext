@@ -25,14 +25,14 @@ import java.awt.image.SampleModel;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderableImage;
 
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderableOp;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderableRegistryMode;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderableOp;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderableRegistryMode;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * An <code>OperationDescriptor</code> describing the "BandCombine" operation.
@@ -98,7 +98,7 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * </tr>
  * <tr>
  * <td>DocURL</td>
- * <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/BandCombineDescriptor.html</td>
+ * <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/BandCombineDescriptor.html</td>
  * </tr>
  * <tr>
  * <td>Version</td>
@@ -134,7 +134,7 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * <td>NO_PARAMETER_DEFAULT</td>
  * <tr>
  * <td>roi</td>
- * <td>javax.media.jai.ROI</td>
+ * <td>org.eclipse.imagen.ROI</td>
  * <td>null</td>
  * <tr>
  * <td>nodata</td>
@@ -160,7 +160,7 @@ public class BandCombineDescriptor extends OperationDescriptorImpl {
             { "Description", JaiI18N.getString("BandCombineDescriptor0") },
             {
                     "DocURL",
-                    "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/BandCombineDescriptor.html" },
+                    "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/BandCombineDescriptor.html" },
             { "Version", JaiI18N.getString("DescriptorVersion") },
             { "arg0Desc", JaiI18N.getString("BandCombineDescriptor2") },
             { "arg1Desc", JaiI18N.getString("BandCombineDescriptor3") },
@@ -168,7 +168,7 @@ public class BandCombineDescriptor extends OperationDescriptorImpl {
             { "arg3Desc", JaiI18N.getString("BandCombineDescriptor5") }};
 
     /** The parameter class list */
-    private static final Class[] paramClasses = { double[][].class, javax.media.jai.ROI.class,
+    private static final Class[] paramClasses = { double[][].class, org.eclipse.imagen.ROI.class,
             it.geosolutions.jaiext.range.Range.class, Double.class };
 
     /** The parameter name list */

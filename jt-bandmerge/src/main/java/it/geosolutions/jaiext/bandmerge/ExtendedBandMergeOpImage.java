@@ -37,21 +37,21 @@ import java.util.List;
 import java.util.Map;
 import java.util.Vector;
 
-import javax.media.jai.ColorSpaceJAI;
-import javax.media.jai.GeometricOpImage;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.PixelAccessor;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RasterFactory;
-import javax.media.jai.UnpackedImageData;
-import javax.media.jai.iterator.RandomIter;
-import javax.media.jai.iterator.RandomIterFactory;
+import org.eclipse.imagen.ColorSpaceJAI;
+import org.eclipse.imagen.GeometricOpImage;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.PixelAccessor;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RasterFactory;
+import org.eclipse.imagen.UnpackedImageData;
+import org.eclipse.imagen.iterator.RandomIter;
+import org.eclipse.imagen.iterator.RandomIterFactory;
 
-import com.sun.media.jai.codecimpl.util.FloatDoubleColorModel;
-import com.sun.media.jai.util.ImageUtil;
-import com.sun.media.jai.util.JDKWorkarounds;
+import org.eclipse.imagen.media.codecimpl.util.FloatDoubleColorModel;
+import org.eclipse.imagen.media.util.ImageUtil;
+import org.eclipse.imagen.media.util.JDKWorkarounds;
 
 /**
  * An <code>OpImage</code> implementing the "BandMerge" operation as described in {@link BandMergeDescriptor}. This version of the BandMergeOpImage

@@ -23,12 +23,12 @@ import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
 import java.awt.image.WritableRenderedImage;
 
-import javax.media.jai.iterator.RandomIter;
-import javax.media.jai.iterator.WritableRandomIter;
+import org.eclipse.imagen.iterator.RandomIter;
+import org.eclipse.imagen.iterator.WritableRandomIter;
 
-import com.sun.media.jai.iterator.WrapperRI;
-import com.sun.media.jai.iterator.WrapperWRI;
-import com.sun.media.jai.iterator.WritableRandomIterFallback;
+import org.eclipse.imagen.media.iterator.WrapperRI;
+import org.eclipse.imagen.media.iterator.WrapperWRI;
+import org.eclipse.imagen.media.iterator.WritableRandomIterFallback;
 
 /**
  * A factory class to instantiate instances of the RandomIter and WritableRandomIter interfaces on sources of type Raster, RenderedImage, and

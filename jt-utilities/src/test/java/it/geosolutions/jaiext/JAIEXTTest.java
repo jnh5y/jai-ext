@@ -30,16 +30,16 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import javax.media.jai.JAI;
-import javax.media.jai.operator.ScaleDescriptor;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.operator.ScaleDescriptor;
 
 import org.apache.commons.io.FileUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.sun.media.jai.mlib.MlibScaleRIF;
-import com.sun.media.jai.opimage.ScaleCRIF;
+import org.eclipse.imagen.media.mlib.MlibScaleRIF;
+import org.eclipse.imagen.media.opimage.ScaleCRIF;
 
 public class JAIEXTTest {
 
@@ -136,7 +136,7 @@ public class JAIEXTTest {
         
         // Ensure that the modified parameterblock contains a JAI interpolation object
         Object interp = block.getObjectParameter(0);
-        assertTrue(interp.getClass().isAssignableFrom(javax.media.jai.InterpolationNearest.class));
+        assertTrue(interp.getClass().isAssignableFrom(org.eclipse.imagen.InterpolationNearest.class));
         
         // BILINEAR INTERPOLATION
         
@@ -153,8 +153,8 @@ public class JAIEXTTest {
         
         // Ensure that the modified parameterblock contains a JAI interpolation object
         interp = block.getObjectParameter(0);
-        assertTrue(interp.getClass().isAssignableFrom(javax.media.jai.InterpolationBilinear.class));
-        assertTrue(((javax.media.jai.InterpolationBilinear)interp).getSubsampleBitsH() == subsampleBits);
+        assertTrue(interp.getClass().isAssignableFrom(org.eclipse.imagen.InterpolationBilinear.class));
+        assertTrue(((org.eclipse.imagen.InterpolationBilinear)interp).getSubsampleBitsH() == subsampleBits);
         
         // BICUBIC INTERPOLATION
         
@@ -170,9 +170,9 @@ public class JAIEXTTest {
         
         // Ensure that the modified parameterblock contains a JAI interpolation object
         interp = block.getObjectParameter(0);
-        assertTrue(interp.getClass().isAssignableFrom(javax.media.jai.InterpolationBicubic.class));
-        assertTrue(((javax.media.jai.InterpolationBicubic)interp).getSubsampleBitsH() == subsampleBits);
-        assertTrue(((javax.media.jai.InterpolationBicubic)interp).getPrecisionBits() == subsampleBits);
+        assertTrue(interp.getClass().isAssignableFrom(org.eclipse.imagen.InterpolationBicubic.class));
+        assertTrue(((org.eclipse.imagen.InterpolationBicubic)interp).getSubsampleBitsH() == subsampleBits);
+        assertTrue(((org.eclipse.imagen.InterpolationBicubic)interp).getPrecisionBits() == subsampleBits);
         
         // BICUBIC 2 INTERPOLATION
         
@@ -188,9 +188,9 @@ public class JAIEXTTest {
         
         // Ensure that the modified parameterblock contains a JAI interpolation object
         interp = block.getObjectParameter(0);
-        assertTrue(interp.getClass().isAssignableFrom(javax.media.jai.InterpolationBicubic2.class));
-        assertTrue(((javax.media.jai.InterpolationBicubic2)interp).getSubsampleBitsH() == subsampleBits);
-        assertTrue(((javax.media.jai.InterpolationBicubic2)interp).getPrecisionBits() == subsampleBits);
+        assertTrue(interp.getClass().isAssignableFrom(org.eclipse.imagen.InterpolationBicubic2.class));
+        assertTrue(((org.eclipse.imagen.InterpolationBicubic2)interp).getSubsampleBitsH() == subsampleBits);
+        assertTrue(((org.eclipse.imagen.InterpolationBicubic2)interp).getPrecisionBits() == subsampleBits);
     }
 
     @AfterClass

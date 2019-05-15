@@ -23,10 +23,10 @@ import it.geosolutions.jaiext.range.RangeFactory;
 import it.geosolutions.jaiext.testclasses.TestBase;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
-import javax.media.jai.BorderExtender;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RenderedOp;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -224,7 +224,7 @@ public class ComparisonTest extends TestBase {
             // creation of the image
             if (OLD_DESCRIPTOR) {
                 JAIExt.registerJAIDescriptor("Border");
-                imageBorder = javax.media.jai.operator.BorderDescriptor.create(image, leftPad,
+                imageBorder = org.eclipse.imagen.operator.BorderDescriptor.create(image, leftPad,
                         rightPad, topPad, bottomPad, extender, null);
             } else {
                 imageBorder = BorderDescriptor.create(image, leftPad, rightPad, topPad, bottomPad,

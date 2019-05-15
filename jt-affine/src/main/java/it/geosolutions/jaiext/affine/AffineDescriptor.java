@@ -25,21 +25,21 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderableImage;
 import java.util.logging.Logger;
-import javax.media.jai.GeometricOpImage;
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.PropertyGenerator;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderableOp;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderableRegistryMode;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.GeometricOpImage;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.PropertyGenerator;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderableOp;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderableRegistryMode;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
-import com.sun.media.jai.util.PropertyGeneratorImpl;
+import org.eclipse.imagen.media.util.PropertyGeneratorImpl;
 
 /**
  * This property generator computes the properties for the operation
@@ -225,7 +225,7 @@ class AffinePropertyGenerator extends PropertyGeneratorImpl {
  * <tr><td>Vendor</td>      <td>it.geosolutions.jaiext</td></tr>
  * <tr><td>Description</td> <td>Performs interpolated affine transform on
  *                              an image.</td></tr>
- * <tr><td>DocURL</td>      <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/AffineDescriptor.html</td></tr>
+ * <tr><td>DocURL</td>      <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/AffineDescriptor.html</td></tr>
  * <tr><td>Version</td>     <td>1.0</td></tr>
  * <tr><td>arg0Desc</td>    <td>The affine transform matrix.</td></tr>
  * <tr><td>arg1Desc</td>    <td>The interpolation method.</td></tr>
@@ -241,7 +241,7 @@ class AffinePropertyGenerator extends PropertyGeneratorImpl {
  *                            <th>Default Value</th></tr>
  * <tr><td>transform</td>     <td>java.awt.geom.AffineTransform</td>
  *                            <td>identity transform</td>
- * <tr><td>interpolation</td> <td>javax.media.jai.Interpolation</td>
+ * <tr><td>interpolation</td> <td>org.eclipse.imagen.Interpolation</td>
  *                            <td>null</td>
  * <tr><td>backgroundValues</td> <td>double[]</td>
  *                            <td>null</td>
@@ -256,8 +256,8 @@ class AffinePropertyGenerator extends PropertyGeneratorImpl {
  * </table></p>
  *
  * @see java.awt.geom.AffineTransform
- * @see javax.media.jai.Interpolation
- * @see javax.media.jai.OperationDescriptor
+ * @see org.eclipse.imagen.Interpolation
+ * @see org.eclipse.imagen.OperationDescriptor
  */
 @SuppressWarnings("serial")
 public class AffineDescriptor extends OperationDescriptorImpl {
@@ -273,7 +273,7 @@ public class AffineDescriptor extends OperationDescriptorImpl {
         {"LocalName",   "Affine"},
         {"Vendor",      "it.geosolutions.jaiext"},
         {"Description", JaiI18N.getString("AffineDescriptor0")},
-        {"DocURL",      "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/AffineDescriptor.html"},
+        {"DocURL",      "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/AffineDescriptor.html"},
         {"Version",     JaiI18N.getString("DescriptorVersion")},
         {"arg0Desc",    JaiI18N.getString("AffineDescriptor1")},
         {"arg1Desc",    JaiI18N.getString("AffineDescriptor2")},
@@ -287,7 +287,7 @@ public class AffineDescriptor extends OperationDescriptorImpl {
     /** The parameter class list for this operation. */
     private static final Class[] paramClasses = {
         java.awt.geom.AffineTransform.class,
-        javax.media.jai.Interpolation.class,
+        org.eclipse.imagen.Interpolation.class,
         double[].class, ROI.class, java.lang.Boolean.class,java.lang.Boolean.class,
         it.geosolutions.jaiext.range.Range.class
     };

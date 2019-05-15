@@ -19,7 +19,7 @@ package it.geosolutions.jaiext.lookup;
 
 import java.awt.image.DataBuffer;
 
-import javax.media.jai.LookupTableJAI;
+import org.eclipse.imagen.LookupTableJAI;
 
 public class LookupTableFactory {
     /**

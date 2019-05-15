@@ -23,14 +23,14 @@ import java.awt.image.ColorModel;
 import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 
-import javax.media.jai.ImageLayout;
+import org.eclipse.imagen.ImageLayout;
 
 /**
  * Extends the standard JAI {@link ImageLayout} to provide a reliable hash function. 
  * {@code ImageLayout} has a bug that will cause an application to crash if doing
  * hashing when some fields have not been initialized.
  * 
- * @see javax.media.jai.ImageLayout
+ * @see org.eclipse.imagen.ImageLayout
  * 
  * @author Simone Giannecchini, GeoSolutions S.A.S.
  * @author Daniele Romagnoli, GeoSolutions S.A.S.

@@ -25,15 +25,15 @@ import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
-import javax.media.jai.BorderExtender;
-import javax.media.jai.BorderExtenderZero;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.OpImage;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFormatTag;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.BorderExtenderZero;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.OpImage;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFormatTag;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 import java.util.Map;
 

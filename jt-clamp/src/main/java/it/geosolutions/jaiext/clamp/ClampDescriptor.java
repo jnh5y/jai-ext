@@ -27,13 +27,13 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.OperationRegistry;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.OperationRegistry;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 public class ClampDescriptor extends OperationDescriptorImpl {
 
@@ -66,7 +66,7 @@ public class ClampDescriptor extends OperationDescriptorImpl {
      * Input Parameter class
      */
     private static final Class[] paramClasses = { it.geosolutions.jaiext.range.Range.class,
-            Double.class, javax.media.jai.ROI.class, double[].class, double[].class };
+            Double.class, org.eclipse.imagen.ROI.class, double[].class, double[].class };
 
     /**
      * Input Parameter default values

@@ -30,13 +30,13 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import javax.imageio.stream.FileImageInputStream;
 import javax.imageio.stream.ImageInputStream;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.RenderedOp;
 
 import junit.framework.Assert;
 import it.geosolutions.jaiext.testclasses.TestData;
 import org.junit.Test;
 
-import com.sun.media.jai.operator.ImageReadDescriptor;
+import org.eclipse.imagen.media.operator.ImageReadDescriptor;
 
 /**
  * This test class is used for checking if the {@link ConcurrentTileCacheMultiMap} behaves correctly.

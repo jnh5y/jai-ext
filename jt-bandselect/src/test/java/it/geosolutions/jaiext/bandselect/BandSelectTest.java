@@ -25,16 +25,16 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.SinglePixelPackedSampleModel;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.ConstantDescriptor;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.operator.ConstantDescriptor;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.sun.media.jai.opimage.CopyOpImage;
+import org.eclipse.imagen.media.opimage.CopyOpImage;
 
 /**
  * Testing the new BandSelect operation

@@ -25,7 +25,7 @@ import java.util.Set;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ROI;
 
 import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.stats.Statistics;

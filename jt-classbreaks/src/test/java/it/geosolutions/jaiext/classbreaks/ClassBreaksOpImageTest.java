@@ -41,10 +41,10 @@ import java.awt.*;
 import java.awt.image.RenderedImage;
 import java.util.Arrays;
 
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.ExtremaDescriptor;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.operator.ExtremaDescriptor;
 
 import it.geosolutions.jaiext.JAIExt;
 import it.geosolutions.jaiext.testclasses.TestBase;

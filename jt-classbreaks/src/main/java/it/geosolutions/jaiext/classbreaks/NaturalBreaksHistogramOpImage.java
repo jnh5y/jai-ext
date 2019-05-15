@@ -35,7 +35,7 @@ package it.geosolutions.jaiext.classbreaks;
 import java.awt.image.RenderedImage;
 import java.util.List;
 
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ROI;
 
 import it.geosolutions.jaiext.classbreaks.HistogramClassification.Bucket;
 

@@ -30,15 +30,15 @@ import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 import java.lang.ref.SoftReference;
 
-import javax.media.jai.PixelAccessor;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RasterFactory;
-import javax.media.jai.UnpackedImageData;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.PixelAccessor;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RasterFactory;
+import org.eclipse.imagen.UnpackedImageData;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 /**
  * Singleton class representing the IHS (<i>I</i>ntensity, <i>H</i>ue, <i>S</i>aturation) color space (also known as HSI or HIS).

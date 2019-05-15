@@ -24,10 +24,10 @@ import java.awt.image.renderable.ParameterBlock;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RenderedOp;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -69,7 +69,7 @@ public class ComparisonTest {
     private static float transY;
 
     /** JAI nearest Interpolator */
-    private static javax.media.jai.InterpolationNearest interpNearOld;
+    private static org.eclipse.imagen.InterpolationNearest interpNearOld;
 
     @BeforeClass
     public static void initialSetup() throws FileNotFoundException, IOException {
@@ -77,7 +77,7 @@ public class ComparisonTest {
         image = getSyntheticImage((byte) 100);
 
         // Interpolators instantiation
-        interpNearOld = new javax.media.jai.InterpolationNearest();
+        interpNearOld = new org.eclipse.imagen.InterpolationNearest();
 
         if(OLD_DESCRIPTOR){
             JAIExt.registerJAIDescriptor("Translate");
@@ -106,10 +106,10 @@ public class ComparisonTest {
 
         if (old) {
             description = "Old Translate";
-            System.setProperty("com.sun.media.jai.disableMediaLib", "false");
+            System.setProperty("org.eclipse.imagen.media.disableMediaLib", "false");
         } else {
             description = "New Translate";
-            System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+            System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
         }
         
         // Total cycles number
@@ -126,7 +126,7 @@ public class ComparisonTest {
 
             // creation of the image with the selected interpolator
             if (old) {
-                imageTranslate = javax.media.jai.operator.TranslateDescriptor.create(image, transX,
+                imageTranslate = org.eclipse.imagen.operator.TranslateDescriptor.create(image, transX,
                         transY, interp, null);
             } else {
                 imageTranslate = TranslateDescriptor.create(image, transX, transY, null, null);

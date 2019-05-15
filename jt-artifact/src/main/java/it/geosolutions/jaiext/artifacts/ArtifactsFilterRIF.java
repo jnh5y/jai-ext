@@ -26,12 +26,12 @@ import java.awt.image.SampleModel;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderedImageFactory;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.ROI;
-import javax.media.jai.RasterFactory;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RasterFactory;
 
-import com.sun.media.jai.opimage.RIFUtil;
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.opimage.RIFUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 /**
  * The image factory for the {@link ArtifactsFilterOpImage} operation.

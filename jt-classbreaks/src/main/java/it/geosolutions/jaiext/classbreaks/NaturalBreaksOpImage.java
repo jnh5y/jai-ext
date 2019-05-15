@@ -36,7 +36,7 @@ import java.awt.image.RenderedImage;
 import java.util.Collections;
 import java.util.List;
 
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ROI;
 
 /** Classification op for the natural breaks method. */
 public class NaturalBreaksOpImage extends ClassBreaksOpImage {

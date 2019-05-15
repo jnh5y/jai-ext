@@ -34,7 +34,7 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.media.jai.TileCache;
+import org.eclipse.imagen.TileCache;
 
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
@@ -42,7 +42,7 @@ import com.google.common.cache.RemovalCause;
 import com.google.common.cache.RemovalListener;
 import com.google.common.cache.RemovalNotification;
 import com.google.common.cache.Weigher;
-import com.sun.media.jai.util.CacheDiagnostics;
+import org.eclipse.imagen.media.util.CacheDiagnostics;
 
 /**
  * This implementation of the TileCache class uses a Guava Cache and a multimap in order to provide a better concurrency handling. The first object

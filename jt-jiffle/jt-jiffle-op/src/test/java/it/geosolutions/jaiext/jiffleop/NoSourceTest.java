@@ -48,11 +48,11 @@ import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.iterator.RectIter;
-import javax.media.jai.iterator.RectIterFactory;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.iterator.RectIter;
+import org.eclipse.imagen.iterator.RectIterFactory;
 
 import it.geosolutions.jaiext.jiffle.JiffleBuilder;
 

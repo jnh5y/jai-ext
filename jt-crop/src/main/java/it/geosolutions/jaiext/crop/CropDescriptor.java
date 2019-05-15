@@ -23,13 +23,13 @@ import java.awt.RenderingHints;
 import java.awt.image.RenderedImage;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.OperationRegistry;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.OperationRegistry;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * Describes the "Crop" operation which performs a crop on an image, like the standard JAI Crop,
@@ -60,7 +60,7 @@ public class CropDescriptor extends OperationDescriptorImpl {
     private static final String[] paramNames = { "x", "y", "width", "height", "ROI", "NoData", "destNoData"};
 
     private static final Class[] paramClasses = { Float.class, Float.class, Float.class,
-            Float.class, javax.media.jai.ROI.class, it.geosolutions.jaiext.range.Range.class, double[].class };
+            Float.class, org.eclipse.imagen.ROI.class, it.geosolutions.jaiext.range.Range.class, double[].class };
 
     private static final Object[] paramDefaults = { Float.valueOf(0), Float.valueOf(0),
             NO_PARAMETER_DEFAULT, NO_PARAMETER_DEFAULT,null,null, new double[]{0}};

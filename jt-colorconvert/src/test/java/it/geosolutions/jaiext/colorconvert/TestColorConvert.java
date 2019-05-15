@@ -35,14 +35,14 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import javax.media.jai.ColorSpaceJAI;
-import javax.media.jai.IHSColorSpace;
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RasterFactory;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.ColorSpaceJAI;
+import org.eclipse.imagen.IHSColorSpace;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RasterFactory;
+import org.eclipse.imagen.RenderedOp;
 
 import it.geosolutions.jaiext.utilities.ImageLayout2;
 import org.junit.Test;

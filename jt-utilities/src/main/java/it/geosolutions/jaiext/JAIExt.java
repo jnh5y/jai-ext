@@ -36,10 +36,10 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptor;
-import javax.media.jai.OperationRegistry;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptor;
+import org.eclipse.imagen.OperationRegistry;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * Utility class used for registering and unregistering JAI and JAI-EXT operations.
@@ -129,7 +129,7 @@ public class JAIExt {
         if (mediaLib) {
             try {
                 // explicit disable
-                mediaLib = !Boolean.getBoolean("com.sun.media.jai.disableMediaLib");
+                mediaLib = !Boolean.getBoolean("org.eclipse.imagen.media.disableMediaLib");
                 // native libs installed
                 if (mediaLib) {
                     final Class<?> mImage = mediaLibImage;
@@ -152,7 +152,7 @@ public class JAIExt {
                     });
                 }
             } catch (Throwable e) {
-                // Because the property com.sun.media.jai.disableMediaLib isn't
+                // Because the property org.eclipse.imagen.media.disableMediaLib isn't
                 // defined as public, the users shouldn't know it. In most of
                 // the cases, it isn't defined, and thus no access permission
                 // is granted to it in the policy file. When JAI is utilized in

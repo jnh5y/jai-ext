@@ -17,7 +17,7 @@
 */
 package it.geosolutions.jaiext.bandmerge;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 import it.geosolutions.jaiext.iterators.RandomIterFactory;
 import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.range.RangeFactory;
@@ -27,15 +27,15 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TiledImage;
-import javax.media.jai.iterator.RandomIter;
-import javax.media.jai.operator.BandSelectDescriptor;
-import javax.media.jai.operator.TranslateDescriptor;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TiledImage;
+import org.eclipse.imagen.iterator.RandomIter;
+import org.eclipse.imagen.operator.BandSelectDescriptor;
+import org.eclipse.imagen.operator.TranslateDescriptor;
 import java.awt.Rectangle;
 import java.awt.RenderingHints;
 import java.awt.geom.AffineTransform;

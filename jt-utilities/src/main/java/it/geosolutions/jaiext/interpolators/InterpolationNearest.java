@@ -22,9 +22,9 @@ import it.geosolutions.jaiext.range.Range;
 import java.awt.Rectangle;
 import java.awt.image.DataBuffer;
 
-import javax.media.jai.Interpolation;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.iterator.RandomIter;
 
 public class InterpolationNearest extends Interpolation implements InterpolationNoData {
 

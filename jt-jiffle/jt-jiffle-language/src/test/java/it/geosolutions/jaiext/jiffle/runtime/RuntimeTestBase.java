@@ -51,9 +51,9 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.media.jai.TiledImage;
-import javax.media.jai.iterator.RectIter;
-import javax.media.jai.iterator.RectIterFactory;
+import org.eclipse.imagen.TiledImage;
+import org.eclipse.imagen.iterator.RectIter;
+import org.eclipse.imagen.iterator.RectIterFactory;
 
 import it.geosolutions.jaiext.utilities.ImageUtilities;
 

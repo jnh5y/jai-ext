@@ -37,7 +37,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeSet;
 
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ROI;
 
 /** Classification op for the quantile method. */
 public class QuantileBreaksOpImage extends ClassBreaksOpImage {

@@ -26,11 +26,11 @@ import java.awt.Rectangle;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -254,15 +254,15 @@ public class ComparisonTest extends TestBase {
             description = "Old " + stat;
             if (NATIVE_ACCELERATION) {
                 description += " accelerated ";
-                System.setProperty("com.sun.media.jai.disableMediaLib", "false");
+                System.setProperty("org.eclipse.imagen.media.disableMediaLib", "false");
             } else {
-                System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+                System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
             }
             // Control if the Range should be used for the new descriptor
         } else {
             propertyName += Statistics.STATS_PROPERTY;
             description = "New " + stat;
-            System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+            System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
 
             if (RANGE_USED) {
                 switch (dataType) {
@@ -331,13 +331,13 @@ public class ComparisonTest extends TestBase {
 
             if (OLD_DESCRIPTOR) {
                 if (STATISTIC == 0) {
-                    imageStats = javax.media.jai.operator.MeanDescriptor.create(testImage, roi,
+                    imageStats = org.eclipse.imagen.operator.MeanDescriptor.create(testImage, roi,
                             xPeriod, yPeriod, null);
                 } else if (STATISTIC == 1) {
-                    imageStats = javax.media.jai.operator.ExtremaDescriptor.create(testImage, roi,
+                    imageStats = org.eclipse.imagen.operator.ExtremaDescriptor.create(testImage, roi,
                             xPeriod, yPeriod, false, 1, null);
                 } else if (STATISTIC == 2) {
-                    imageStats = javax.media.jai.operator.HistogramDescriptor.create(testImage,
+                    imageStats = org.eclipse.imagen.operator.HistogramDescriptor.create(testImage,
                             roi, xPeriod, yPeriod, numBinsTest, minBoundsTest, maxBoundsTest, null);
                 }
             } else {

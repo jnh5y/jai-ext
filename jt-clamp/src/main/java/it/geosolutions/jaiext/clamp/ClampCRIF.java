@@ -26,11 +26,11 @@ import java.awt.image.renderable.ParameterBlock;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.media.jai.CRIFImpl;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.ROI;
+import org.eclipse.imagen.CRIFImpl;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.ROI;
 
-import com.sun.media.jai.opimage.RIFUtil;
+import org.eclipse.imagen.media.opimage.RIFUtil;
 
 /**
  * A <code>CRIF</code> supporting the "Clamp" operation on rendered and renderable images.

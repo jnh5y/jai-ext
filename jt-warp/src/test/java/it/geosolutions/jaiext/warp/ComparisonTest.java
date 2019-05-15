@@ -27,17 +27,17 @@ import java.awt.geom.AffineTransform;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.Interpolation;
-import javax.media.jai.InterpolationBicubic;
-import javax.media.jai.InterpolationBilinear;
-import javax.media.jai.InterpolationNearest;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.Warp;
-import javax.media.jai.WarpAffine;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.InterpolationBicubic;
+import org.eclipse.imagen.InterpolationBilinear;
+import org.eclipse.imagen.InterpolationNearest;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.Warp;
+import org.eclipse.imagen.WarpAffine;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -197,14 +197,14 @@ public class ComparisonTest extends TestWarp {
             description = "Old " + description;
             if (NATIVE_ACCELERATION) {
                 description += " accelerated ";
-                System.setProperty("com.sun.media.jai.disableMediaLib", "false");
+                System.setProperty("org.eclipse.imagen.media.disableMediaLib", "false");
             } else {
-                System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+                System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
             }
             // Control if the Range should be used for the new descriptor
         } else {
             description = "New " + description;
-            System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+            System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
         }
         // Data type string
         String dataTypeString = "";
@@ -283,7 +283,7 @@ public class ComparisonTest extends TestWarp {
             // creation of the image
             if (OLD_DESCRIPTOR) {
                 JAIExt.registerJAIDescriptor("Warp");
-                imageWarp = javax.media.jai.operator.WarpDescriptor.create(image, warpObj,
+                imageWarp = org.eclipse.imagen.operator.WarpDescriptor.create(image, warpObj,
                         interpolation, backgroundValues, null);
             } else {
                 imageWarp = WarpDescriptor.create(image, warpObj, interpolation, backgroundValues,

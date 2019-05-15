@@ -23,16 +23,16 @@ import java.awt.RenderingHints;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 
-import javax.media.jai.JAI;
-import javax.media.jai.KernelJAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PropertyGenerator;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.KernelJAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PropertyGenerator;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
-import com.sun.media.jai.util.AreaOpPropertyGenerator;
+import org.eclipse.imagen.media.util.AreaOpPropertyGenerator;
 
 /**
  * An <code>OperationDescriptor</code> describing the "Convolve" operation.
@@ -104,7 +104,7 @@ import com.sun.media.jai.util.AreaOpPropertyGenerator;
  * </tr>
  * <tr>
  * <td>DocURL</td>
- * <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/ConvolveDescriptor.html</td>
+ * <td>http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/ConvolveDescriptor.html</td>
  * </tr>
  * <tr>
  * <td>Version</td>
@@ -143,11 +143,11 @@ import com.sun.media.jai.util.AreaOpPropertyGenerator;
  * </tr>
  * <tr>
  * <td>kernel</td>
- * <td>javax.media.jai.KernelJAI</td>
+ * <td>org.eclipse.imagen.KernelJAI</td>
  * <td>NO_PARAMETER_DEFAULT</td>
  * <tr>
  * <td>roi</td>
- * <td>javax.media.jai.ROI</td>
+ * <td>org.eclipse.imagen.ROI</td>
  * <td>null</td>
  * <tr>
  * <td>nodata</td>
@@ -179,7 +179,7 @@ public class ConvolveDescriptor extends OperationDescriptorImpl {
             { "Description", JaiI18N.getString("ConvolveDescriptor0") },
             {
                     "DocURL",
-                    "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/ConvolveDescriptor.html" },
+                    "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/ConvolveDescriptor.html" },
             { "Version", JaiI18N.getString("DescriptorVersion") },
             { "arg0Desc", JaiI18N.getString("ConvolveDescriptor1") },
             { "arg1Desc", JaiI18N.getString("ConvolveDescriptor2") },
@@ -191,8 +191,8 @@ public class ConvolveDescriptor extends OperationDescriptorImpl {
     private static final String[] paramNames = { "kernel", "roi", "nodata", "destNoData", "skipNoData" };
 
     /** The parameter class types for the Convolve operation. */
-    private static final Class[] paramClasses = { javax.media.jai.KernelJAI.class,
-            javax.media.jai.ROI.class, it.geosolutions.jaiext.range.Range.class,
+    private static final Class[] paramClasses = { org.eclipse.imagen.KernelJAI.class,
+            org.eclipse.imagen.ROI.class, it.geosolutions.jaiext.range.Range.class,
             Double.class, Boolean.class
     };
 

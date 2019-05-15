@@ -17,7 +17,7 @@
 */
 package it.geosolutions.jaiext.mosaic;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 import java.awt.*;
 import java.awt.color.ColorSpace;
@@ -38,19 +38,19 @@ import java.util.List;
 import java.util.Map;
 import java.util.Vector;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.BorderExtenderConstant;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.LookupTableJAI;
-import javax.media.jai.OpImage;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFormatTag;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.MosaicDescriptor;
-import javax.media.jai.operator.MosaicType;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.BorderExtenderConstant;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.LookupTableJAI;
+import org.eclipse.imagen.OpImage;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFormatTag;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.operator.MosaicDescriptor;
+import org.eclipse.imagen.operator.MosaicType;
 
 import it.geosolutions.jaiext.lookup.LookupTable;
 import it.geosolutions.jaiext.lookup.LookupTableFactory;

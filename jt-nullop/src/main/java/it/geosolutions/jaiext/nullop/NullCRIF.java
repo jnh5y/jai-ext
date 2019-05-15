@@ -20,9 +20,9 @@ package it.geosolutions.jaiext.nullop;
 import java.awt.RenderingHints;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
-import javax.media.jai.CRIFImpl;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
+import org.eclipse.imagen.CRIFImpl;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
 
 /**
  * A <code>ContextualRenderedImageFactory</code> representing an operation which performs no processing of its image source(s) per se, i.e., a no-op.

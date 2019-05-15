@@ -32,21 +32,21 @@ import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 import java.util.Map;
 
-import javax.media.jai.ColorCube;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.KernelJAI;
-import javax.media.jai.LookupTableJAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RasterFactory;
-import javax.media.jai.RasterFormatTag;
-import javax.media.jai.UntiledOpImage;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.ColorCube;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.KernelJAI;
+import org.eclipse.imagen.LookupTableJAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RasterFactory;
+import org.eclipse.imagen.RasterFormatTag;
+import org.eclipse.imagen.UntiledOpImage;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
-import com.sun.media.jai.util.JDKWorkarounds;
+import org.eclipse.imagen.media.util.ImageUtil;
+import org.eclipse.imagen.media.util.JDKWorkarounds;
 
 /**
  * An <code>OpImage</code> implementing the error diffusion operation as described in <code>ErrorDiffusionDescriptor</code>.

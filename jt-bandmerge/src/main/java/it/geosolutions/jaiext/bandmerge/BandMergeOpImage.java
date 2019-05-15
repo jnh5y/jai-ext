@@ -35,20 +35,20 @@ import java.awt.image.WritableRaster;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.PointOpImage;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.PointOpImage;
 import java.util.Map;
 
-import javax.media.jai.ColorSpaceJAI;
-import javax.media.jai.PixelAccessor;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.UnpackedImageData;
-import javax.media.jai.RasterFactory;
+import org.eclipse.imagen.ColorSpaceJAI;
+import org.eclipse.imagen.PixelAccessor;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.UnpackedImageData;
+import org.eclipse.imagen.RasterFactory;
 
-import com.sun.media.jai.codecimpl.util.FloatDoubleColorModel;
-import com.sun.media.jai.util.ImageUtil;
-import com.sun.media.jai.util.JDKWorkarounds;
+import org.eclipse.imagen.media.codecimpl.util.FloatDoubleColorModel;
+import org.eclipse.imagen.media.util.ImageUtil;
+import org.eclipse.imagen.media.util.JDKWorkarounds;
 
 /**
  * An <code>OpImage</code> implementing the "BandMerge" operation as described in {@link BandMergeDescriptor}.

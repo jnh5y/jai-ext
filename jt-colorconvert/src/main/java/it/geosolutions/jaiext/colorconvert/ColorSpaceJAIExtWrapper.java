@@ -22,8 +22,8 @@ import it.geosolutions.jaiext.range.Range;
 import java.awt.image.Raster;
 import java.awt.image.WritableRaster;
 
-import javax.media.jai.ColorSpaceJAI;
-import javax.media.jai.ROI;
+import org.eclipse.imagen.ColorSpaceJAI;
+import org.eclipse.imagen.ROI;
 
 /**
  * This class is used for wrapping {@link ColorSpaceJAI} instances into

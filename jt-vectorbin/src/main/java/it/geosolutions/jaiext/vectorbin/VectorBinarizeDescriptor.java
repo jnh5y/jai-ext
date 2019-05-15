@@ -19,8 +19,8 @@ package it.geosolutions.jaiext.vectorbin;
 
 import java.awt.image.renderable.ParameterBlock;
 
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 import org.locationtech.jts.geom.Polygonal;
 import org.locationtech.jts.geom.prep.PreparedGeometry;

@@ -40,10 +40,10 @@ import java.awt.image.SampleModel;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-import javax.media.jai.PixelAccessor;
-import javax.media.jai.ROI;
-import javax.media.jai.StatisticsOpImage;
-import javax.media.jai.UnpackedImageData;
+import org.eclipse.imagen.PixelAccessor;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.StatisticsOpImage;
+import org.eclipse.imagen.UnpackedImageData;
 
 /** Abstract base class for various operations corresponding to classification method. */
 public abstract class ClassBreaksOpImage extends StatisticsOpImage {

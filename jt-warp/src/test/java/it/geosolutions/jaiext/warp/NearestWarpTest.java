@@ -28,11 +28,11 @@ import java.awt.image.RenderedImage;
 import java.awt.image.WritableRaster;
 import java.util.Arrays;
 
-import javax.media.jai.Interpolation;
-import javax.media.jai.ROI;
-import javax.media.jai.TiledImage;
-import javax.media.jai.WarpAffine;
-import javax.media.jai.operator.ConstantDescriptor;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.TiledImage;
+import org.eclipse.imagen.WarpAffine;
+import org.eclipse.imagen.operator.ConstantDescriptor;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;

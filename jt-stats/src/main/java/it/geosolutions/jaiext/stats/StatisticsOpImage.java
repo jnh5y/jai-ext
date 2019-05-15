@@ -32,17 +32,17 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.OpImage;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.RasterAccessor;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OpImage;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RasterAccessor;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.PropertyUtil;
+import org.eclipse.imagen.media.util.PropertyUtil;
 
 /**
  * This abstract class is used for defining the common methods for calculating image statistics. There are 2 subclasses of this class called

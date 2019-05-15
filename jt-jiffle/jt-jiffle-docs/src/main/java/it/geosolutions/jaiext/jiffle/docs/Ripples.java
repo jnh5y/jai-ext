@@ -47,9 +47,9 @@ import java.awt.image.RenderedImage;
 import java.awt.image.WritableRenderedImage;
 import java.io.File;
 
-import javax.media.jai.TiledImage;
-import javax.media.jai.iterator.RectIterFactory;
-import javax.media.jai.iterator.WritableRectIter;
+import org.eclipse.imagen.TiledImage;
+import org.eclipse.imagen.iterator.RectIterFactory;
+import org.eclipse.imagen.iterator.WritableRectIter;
 
 import it.geosolutions.jaiext.utilities.ImageUtilities;
 import it.geosolutions.jaiext.jiffle.JiffleBuilder;

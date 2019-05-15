@@ -25,13 +25,13 @@ import java.awt.Shape;
 import java.awt.geom.Area;
 import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
-import javax.media.jai.BorderExtender;
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.OperationNode;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.OperationNode;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * An <code>OperationDescriptor</code> describing the "Border" operation.
@@ -144,8 +144,8 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * <td>0</td>
  * <tr>
  * <td>type</td>
- * <td>javax.media.jai.BorderExtender</td>
- * <td>javax.media.jai.BorderExtenderZero</td>
+ * <td>org.eclipse.imagen.BorderExtender</td>
+ * <td>org.eclipse.imagen.BorderExtenderZero</td>
  * <tr>
  * <td>noData</td>
  * <td>it.geosolutions.jaiext.range.Range</td>
@@ -179,7 +179,7 @@ public class BorderDescriptor extends OperationDescriptorImpl {
 
     /** The parameter class list for this operation. */
     private static final Class[] paramClasses = { java.lang.Integer.class, java.lang.Integer.class,
-            java.lang.Integer.class, java.lang.Integer.class, javax.media.jai.BorderExtender.class,
+            java.lang.Integer.class, java.lang.Integer.class, org.eclipse.imagen.BorderExtender.class,
             it.geosolutions.jaiext.range.Range.class, java.lang.Double.class };
 
     /** The parameter default value list for this operation. */

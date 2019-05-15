@@ -58,8 +58,8 @@ import java.awt.image.WritableRenderedImage;
 import java.io.File;
 import java.net.URL;
 
-import javax.media.jai.iterator.RandomIter;
-import javax.media.jai.iterator.RandomIterFactory;
+import org.eclipse.imagen.iterator.RandomIter;
+import org.eclipse.imagen.iterator.RandomIterFactory;
 
 import it.geosolutions.jaiext.utilities.ImageUtilities;
 

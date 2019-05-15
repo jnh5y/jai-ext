@@ -25,12 +25,12 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.util.logging.Logger;
 
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * Clone of GeoTools color invertion made work against a {@link ColorIndexer}
@@ -73,7 +73,7 @@ public class ColorIndexerDescriptor extends OperationDescriptorImpl {
                 // modes
                 new String[] { "Indexer", "roi", "nodata", "destNoData" }, // Parameter
                 // names
-                new Class[] { ColorIndexer.class, javax.media.jai.ROI.class,
+                new Class[] { ColorIndexer.class, org.eclipse.imagen.ROI.class,
                         it.geosolutions.jaiext.range.Range.class, Integer.class }, // Parameter
                 // classes
                 new Object[] { null, null, null, 0 }, // Default

@@ -28,13 +28,13 @@ import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 import java.util.Arrays;
 
-import javax.media.jai.ColorCube;
-import javax.media.jai.KernelJAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.ColorCube;
+import org.eclipse.imagen.KernelJAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.iterator.RandomIter;
 
 import org.junit.BeforeClass;
 import org.junit.Test;

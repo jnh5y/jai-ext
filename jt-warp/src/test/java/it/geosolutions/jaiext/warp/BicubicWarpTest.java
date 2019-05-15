@@ -22,7 +22,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import javax.media.jai.WarpAffine;
+import org.eclipse.imagen.WarpAffine;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBuffer;

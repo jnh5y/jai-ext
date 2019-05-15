@@ -50,7 +50,18 @@
             <groupId>org.hamcrest</groupId>
             <artifactId>hamcrest-library</artifactId>
             <scope>test</scope>
-        </dependency>
+    </dependency>
+    <dependency>
+	      <groupId>org.eclipse.imagen</groupId>
+	        <artifactId>imagen_core</artifactId>
+		  <version>${jai.version}</version>
+	  </dependency>
+	  <dependency>
+		    <groupId>org.eclipse.imagen</groupId>
+		      <artifactId>jai_codec</artifactId>
+		        <version>${jai.version}</version>
+		</dependency>
+		<!--
         <dependency>
             <groupId>javax.media</groupId>
             <artifactId>jai_core</artifactId>
@@ -62,7 +73,8 @@
         <dependency>
             <groupId>javax.media</groupId>
             <artifactId>jai_imageio</artifactId>
-        </dependency>
+	</dependency>
+-->
     </dependencies>
 
     <modules>

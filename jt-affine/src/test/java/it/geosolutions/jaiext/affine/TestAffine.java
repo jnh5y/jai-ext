@@ -34,13 +34,13 @@ import java.awt.image.Raster;
 import java.awt.image.RenderedImage;
 import java.io.IOException;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
 
 
 /**
@@ -179,7 +179,7 @@ public class TestAffine extends TestBase {
         switch (interpType) {
         case NEAREST_INTERP:
             // Nearest-Neighbor
-            interpN = new javax.media.jai.InterpolationNearest();
+            interpN = new org.eclipse.imagen.InterpolationNearest();
 
             // Affine operation
             destinationIMG = AffineDescriptor.create(sourceImage, transform, interpN, new double[] {destinationNoData},
@@ -188,7 +188,7 @@ public class TestAffine extends TestBase {
             break;
         case BILINEAR_INTERP:
             // Bilinear
-            interpB = new javax.media.jai.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
+            interpB = new org.eclipse.imagen.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
 
             if (hints != null) {
                 hints.add(new RenderingHints(JAI.KEY_BORDER_EXTENDER, BorderExtender
@@ -205,7 +205,7 @@ public class TestAffine extends TestBase {
             break;
         case BICUBIC_INTERP:
             // Bicubic
-            interpBN = new javax.media.jai.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
+            interpBN = new org.eclipse.imagen.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
 
             if (hints != null) {
                 hints.add(new RenderingHints(JAI.KEY_BORDER_EXTENDER, BorderExtender

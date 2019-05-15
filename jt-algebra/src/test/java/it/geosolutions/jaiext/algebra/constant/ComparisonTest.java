@@ -26,14 +26,14 @@ import java.awt.Rectangle;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.AddConstDescriptor;
-import javax.media.jai.operator.DivideByConstDescriptor;
-import javax.media.jai.operator.MultiplyConstDescriptor;
-import javax.media.jai.operator.SubtractConstDescriptor;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.operator.AddConstDescriptor;
+import org.eclipse.imagen.operator.DivideByConstDescriptor;
+import org.eclipse.imagen.operator.MultiplyConstDescriptor;
+import org.eclipse.imagen.operator.SubtractConstDescriptor;
 
 import org.junit.BeforeClass;
 import org.junit.Test;

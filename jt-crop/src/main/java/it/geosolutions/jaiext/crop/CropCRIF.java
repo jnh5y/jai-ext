@@ -29,13 +29,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.Vector;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.operator.MosaicDescriptor;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.operator.MosaicDescriptor;
 
-import com.sun.media.jai.opimage.RIFUtil;
+import org.eclipse.imagen.media.opimage.RIFUtil;
 
 import it.geosolutions.jaiext.mosaic.MosaicOpImage;
 import it.geosolutions.jaiext.range.Range;

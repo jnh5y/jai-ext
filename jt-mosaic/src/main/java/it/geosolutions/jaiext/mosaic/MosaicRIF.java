@@ -24,11 +24,11 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderedImageFactory;
 
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.operator.MosaicType;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.operator.MosaicType;
 
-import com.sun.media.jai.opimage.RIFUtil;
+import org.eclipse.imagen.media.opimage.RIFUtil;
 
 /**
  * Simple class that provides the RenderedImage create operation by calling the MosaicOpImage. The input parameters are: ParameterBlock,

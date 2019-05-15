@@ -30,13 +30,13 @@ import java.awt.image.RenderedImage;
 import java.io.IOException;
 import java.nio.Buffer;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TiledImage;
-import javax.media.jai.Warp;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TiledImage;
+import org.eclipse.imagen.Warp;
 
 import it.geosolutions.jaiext.range.Range;
 import it.geosolutions.jaiext.range.RangeFactory;
@@ -122,21 +122,21 @@ public class TestWarp extends TestBase {
         switch (interpType) {
         case NEAREST_INTERP:
             // Nearest-Neighbor
-            interp = new javax.media.jai.InterpolationNearest();
+            interp = new org.eclipse.imagen.InterpolationNearest();
             break;
         case BILINEAR_INTERP:
             // Bilinear
-            interp = new javax.media.jai.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
+            interp = new org.eclipse.imagen.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
 
             break;
         case BICUBIC_INTERP:
             // Bicubic
-            interp = new javax.media.jai.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
+            interp = new org.eclipse.imagen.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
 
             break;
         case GENERAL_INTERP:
             // Bicubic
-            interp = new javax.media.jai.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
+            interp = new org.eclipse.imagen.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
 
             break;
         default:

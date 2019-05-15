@@ -24,8 +24,8 @@ import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 
-import javax.media.jai.TiledImage;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.TiledImage;
+import org.eclipse.imagen.iterator.RandomIter;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
@@ -173,28 +173,28 @@ public class RandomIterTest {
                 64);
 
         // JAI INTERPOLATORS CREATIONS. USED ONLY FOR CALCULATING THE EXPECTED VALUES.
-        iterByte = javax.media.jai.iterator.RandomIterFactory.create(testImageByte, null);
+        iterByte = org.eclipse.imagen.iterator.RandomIterFactory.create(testImageByte, null);
 
-        iterShort = javax.media.jai.iterator.RandomIterFactory.create(testImageShort, null);
+        iterShort = org.eclipse.imagen.iterator.RandomIterFactory.create(testImageShort, null);
 
-        iterInt = javax.media.jai.iterator.RandomIterFactory.create(testImageInt, null);
+        iterInt = org.eclipse.imagen.iterator.RandomIterFactory.create(testImageInt, null);
 
-        iterByteIMGFloat = javax.media.jai.iterator.RandomIterFactory.create(testImageByteIMGFloat,
+        iterByteIMGFloat = org.eclipse.imagen.iterator.RandomIterFactory.create(testImageByteIMGFloat,
                 null);
 
-        iterShortIMGFloat = javax.media.jai.iterator.RandomIterFactory.create(
+        iterShortIMGFloat = org.eclipse.imagen.iterator.RandomIterFactory.create(
                 testImageShortIMGFloat, null);
 
-        iterIntIMGFloat = javax.media.jai.iterator.RandomIterFactory.create(testImageIntIMGFloat,
+        iterIntIMGFloat = org.eclipse.imagen.iterator.RandomIterFactory.create(testImageIntIMGFloat,
                 null);
 
-        iterByteIMGDouble = javax.media.jai.iterator.RandomIterFactory.create(
+        iterByteIMGDouble = org.eclipse.imagen.iterator.RandomIterFactory.create(
                 testImageByteIMGDouble, null);
 
-        iterShortIMGDouble = javax.media.jai.iterator.RandomIterFactory.create(
+        iterShortIMGDouble = org.eclipse.imagen.iterator.RandomIterFactory.create(
                 testImageShortIMGDouble, null);
 
-        iterIntIMGDouble = javax.media.jai.iterator.RandomIterFactory.create(testImageIntIMGDouble,
+        iterIntIMGDouble = org.eclipse.imagen.iterator.RandomIterFactory.create(testImageIntIMGDouble,
                 null);
 
         // INITIALIZATION AND SAVING OF THE EXPECTED VALUES.

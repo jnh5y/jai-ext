@@ -26,12 +26,12 @@ import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 import java.io.IOException;
 
-import javax.media.jai.Interpolation;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.NullDescriptor;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.operator.NullDescriptor;
 
 import org.junit.Test;
 
@@ -62,11 +62,11 @@ public class CoverageClassTest extends TestScale2 {
 
         // Interpolators initialization
         // Nearest-Neighbor
-        Interpolation interpNear = new javax.media.jai.InterpolationNearest();
+        Interpolation interpNear = new org.eclipse.imagen.InterpolationNearest();
         // Bilinear
-        Interpolation interpBil = new javax.media.jai.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
+        Interpolation interpBil = new org.eclipse.imagen.InterpolationBilinear(DEFAULT_SUBSAMPLE_BITS);
         // Bicubic
-        Interpolation interpBic = new javax.media.jai.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
+        Interpolation interpBic = new org.eclipse.imagen.InterpolationBicubic(DEFAULT_SUBSAMPLE_BITS);
 
         // ROI creation
         ROIShape roi = roiCreation();

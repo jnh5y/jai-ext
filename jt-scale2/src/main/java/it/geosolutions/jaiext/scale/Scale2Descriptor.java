@@ -17,7 +17,7 @@
 */
 package it.geosolutions.jaiext.scale;
 
-import com.sun.media.jai.util.PropertyGeneratorImpl;
+import org.eclipse.imagen.media.util.PropertyGeneratorImpl;
 
 import org.locationtech.jts.geom.Geometry;
 
@@ -27,21 +27,21 @@ import java.awt.image.renderable.ParameterBlock;
 import java.awt.image.renderable.RenderableImage;
 import java.util.logging.Logger;
 
-import javax.media.jai.BorderExtender;
-import javax.media.jai.GeometricOpImage;
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.PropertyGenerator;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderableOp;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.ConstantDescriptor;
-import javax.media.jai.registry.RenderableRegistryMode;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.BorderExtender;
+import org.eclipse.imagen.GeometricOpImage;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.PropertyGenerator;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderableOp;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.operator.ConstantDescriptor;
+import org.eclipse.imagen.registry.RenderableRegistryMode;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 import it.geosolutions.jaiext.interpolators.InterpolationBicubic;
 import it.geosolutions.jaiext.interpolators.InterpolationBilinear;
@@ -127,8 +127,8 @@ class Scale2PropertyGenerator extends PropertyGeneratorImpl {
                     && (Math.abs(ty - (int) ty) < Scale2CRIF.TOLERANCE)) {
                 // It's an integer translate.
                 roiImage = new TranslateIntOpImage(srcROI.getAsImage(), null, (int) tx, (int) ty);
-            } else if (interp instanceof InterpolationBilinear || interp instanceof javax.media.jai.InterpolationBilinear
-                    || interp instanceof InterpolationBicubic || interp instanceof javax.media.jai.InterpolationBicubic) {
+            } else if (interp instanceof InterpolationBilinear || interp instanceof org.eclipse.imagen.InterpolationBilinear
+                    || interp instanceof InterpolationBicubic || interp instanceof org.eclipse.imagen.InterpolationBicubic) {
                 // Setting constant image to be scaled as a ROI
 
                 ImageLayout2 layout = new ImageLayout2();
@@ -154,7 +154,7 @@ class Scale2PropertyGenerator extends PropertyGeneratorImpl {
                 scalingHints.remove(JAI.KEY_IMAGE_LAYOUT);
                 scalingHints.put(JAI.KEY_BORDER_EXTENDER, extender);
 
-                boolean isBilinear = (interp instanceof InterpolationBilinear || interp instanceof javax.media.jai.InterpolationBilinear);
+                boolean isBilinear = (interp instanceof InterpolationBilinear || interp instanceof org.eclipse.imagen.InterpolationBilinear);
                 Interpolation interpParam = isBilinear
                         ? new InterpolationBilinear(interp.getSubsampleBitsH(), null, false, 0,
                                 constantImage.getSampleModel().getDataType())
@@ -189,7 +189,7 @@ class Scale2PropertyGenerator extends PropertyGeneratorImpl {
 
                 if (interp != null) {
                     if (interp instanceof InterpolationBicubic
-                            || interp instanceof javax.media.jai.InterpolationBicubic) {
+                            || interp instanceof org.eclipse.imagen.InterpolationBicubic) {
                         InterpolationBilinear interpBilinear = new InterpolationBilinear(
                                 interp.getSubsampleBitsH(), null, false, 0,
                                 roiMod.getSampleModel().getDataType());
@@ -324,7 +324,7 @@ class Scale2PropertyGenerator extends PropertyGeneratorImpl {
  * <tr><td>LocalName</td>   <td>Scale</td></tr>
  * <tr><td>Vendor</td>      <td>it.geosolutions.jaiext</td></tr>
  * <tr><td>Description</td> <td>Resizes an image.</td></tr>
- * <tr><td>DocURL</td>      <td> See this URL for the official description http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/ScaleDescriptor.html</td></tr>
+ * <tr><td>DocURL</td>      <td> See this URL for the official description http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/ScaleDescriptor.html</td></tr>
  * <tr><td>Version</td>     <td>1.0</td></tr>
  * <tr><td>arg0Desc</td>    <td>The X scale factor.</td></tr>
  * <tr><td>arg1Desc</td>    <td>The Y scale factor.</td></tr>
@@ -345,7 +345,7 @@ class Scale2PropertyGenerator extends PropertyGeneratorImpl {
  *                            <td>0.0F</td>
  * <tr><td>yTrans</td>        <td>java.lang.Float</td>
  *                            <td>0.0F</td>
- * <tr><td>interpolation</td> <td>javax.media.jai.Interpolation</td>
+ * <tr><td>interpolation</td> <td>org.eclipse.imagen.Interpolation</td>
  *                            <td>Null(An Interpolation Object must be defined)</td>
  * <tr><td>ROI</td>           <td>ROI</td>
  *                            <td>null</td>         
@@ -353,9 +353,9 @@ class Scale2PropertyGenerator extends PropertyGeneratorImpl {
  *                            <td>False</td>                            
  * </table></p>
  *
- * @see javax.media.jai.Interpolation
- * @see javax.media.jai.BorderExtender
- * @see javax.media.jai.OperationDescriptor
+ * @see org.eclipse.imagen.Interpolation
+ * @see org.eclipse.imagen.BorderExtender
+ * @see org.eclipse.imagen.OperationDescriptor
  */
 
 public class Scale2Descriptor extends OperationDescriptorImpl {
@@ -371,7 +371,7 @@ public class Scale2Descriptor extends OperationDescriptorImpl {
         {"LocalName",   "Scale2"},
         {"Vendor",      "it.geosolutions.jaiext"},
         {"Description", JaiI18N.getString("ScaleDescriptor0")},
-        {"DocURL",      "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/javax/media/jai/operator/ScaleDescriptor.html"},
+        {"DocURL",      "http://java.sun.com/products/java-media/jai/forDevelopers/jai-apidocs/org.eclipse.imagen/operator/ScaleDescriptor.html"},
         {"Version",     JaiI18N.getString("DescriptorVersion")},
         {"arg0Desc",    JaiI18N.getString("ScaleDescriptor1")},
         {"arg1Desc",    JaiI18N.getString("ScaleDescriptor2")},
@@ -388,7 +388,7 @@ public class Scale2Descriptor extends OperationDescriptorImpl {
     private static final Class[] paramClasses = {
         java.lang.Double.class, java.lang.Double.class,
         java.lang.Double.class, java.lang.Double.class,
-        javax.media.jai.Interpolation.class, ROI.class, Boolean.class,
+        org.eclipse.imagen.Interpolation.class, ROI.class, Boolean.class,
         it.geosolutions.jaiext.range.Range.class, double[].class
     };
 

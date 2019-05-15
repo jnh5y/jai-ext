@@ -25,9 +25,9 @@ import java.awt.image.RenderedImage;
 import java.lang.ref.WeakReference;
 import java.math.BigInteger;
 
-import javax.media.jai.CachedTile;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.remote.SerializableRenderedImage;
+import org.eclipse.imagen.CachedTile;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.remote.SerializableRenderedImage;
 
 /**
  * This class is used by ConcurrentTileCache to create an object that includes all the information associated with a tile, and is put into the cache.

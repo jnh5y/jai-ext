@@ -20,11 +20,11 @@ package it.geosolutions.jaiext.bandmerge;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
 import java.util.Vector;
-import javax.media.jai.JAI;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.TiledImage;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.TiledImage;
 
 import org.junit.BeforeClass;
 import org.junit.Test;

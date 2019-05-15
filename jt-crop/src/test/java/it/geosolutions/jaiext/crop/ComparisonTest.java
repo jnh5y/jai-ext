@@ -24,11 +24,11 @@ import it.geosolutions.jaiext.testclasses.TestBase;
 import java.awt.Rectangle;
 import java.awt.image.DataBuffer;
 import java.awt.image.RenderedImage;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.RenderedOp;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.RenderedOp;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
@@ -182,14 +182,14 @@ public class ComparisonTest extends TestBase {
             description = "Old " + description;
             if (NATIVE_ACCELERATION) {
                 description += " accelerated ";
-                System.setProperty("com.sun.media.jai.disableMediaLib", "false");
+                System.setProperty("org.eclipse.imagen.media.disableMediaLib", "false");
             } else {
-                System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+                System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
             }
             // Control if the Range should be used for the new descriptor
         } else {
             description = "New " + description;
-            System.setProperty("com.sun.media.jai.disableMediaLib", "true");
+            System.setProperty("org.eclipse.imagen.media.disableMediaLib", "true");
         }
         // Data type string
         String dataTypeString = "";
@@ -232,7 +232,7 @@ public class ComparisonTest extends TestBase {
             // creation of the image
             if (OLD_DESCRIPTOR) {
                 JAIExt.registerJAIDescriptor("Crop");
-                imageCrop = javax.media.jai.operator.CropDescriptor.create(image, cropX, cropY,
+                imageCrop = org.eclipse.imagen.operator.CropDescriptor.create(image, cropX, cropY,
                         cropWidth, cropHeight, null);
             } else {
                 imageCrop = CropDescriptor.create(image, cropX, cropY, cropWidth, cropHeight, roi,

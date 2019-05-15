@@ -33,10 +33,10 @@ import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
 import java.util.Arrays;
 import java.util.Map;
-import javax.media.jai.*;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.*;
+import org.eclipse.imagen.iterator.RandomIter;
 
-import com.sun.media.jai.util.ImageUtil;
+import org.eclipse.imagen.media.util.ImageUtil;
 
 /**
  * Subclass of {@link WarpOpImage} that makes use of the provided ROI and NoData.
@@ -45,7 +45,7 @@ import com.sun.media.jai.util.ImageUtil;
  * 
  */
 @SuppressWarnings("unchecked")
-public abstract class WarpOpImage extends javax.media.jai.WarpOpImage {
+public abstract class WarpOpImage extends org.eclipse.imagen.WarpOpImage {
 
     /** {@link BorderExtender} instance for extending roi. */
     protected final static BorderExtender ZERO_EXTENDER = BorderExtender

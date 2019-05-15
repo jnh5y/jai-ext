@@ -22,12 +22,12 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ContextualRenderedImageFactory;
 import java.awt.image.renderable.ParameterBlock;
 
-import javax.media.jai.CRIFImpl;
-import javax.media.jai.ImageLayout;
-import javax.media.jai.NullOpImage;
-import javax.media.jai.OpImage;
+import org.eclipse.imagen.CRIFImpl;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.NullOpImage;
+import org.eclipse.imagen.OpImage;
 
-import com.sun.media.jai.opimage.RIFUtil;
+import org.eclipse.imagen.media.opimage.RIFUtil;
 
 /**
  * Dummy {@link ContextualRenderedImageFactory} for the "Scale" operation. Internally it calls the "Null" operation.

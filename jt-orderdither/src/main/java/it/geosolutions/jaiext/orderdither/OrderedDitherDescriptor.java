@@ -24,14 +24,14 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.renderable.ParameterBlock;
 
-import javax.media.jai.ColorCube;
-import javax.media.jai.JAI;
-import javax.media.jai.KernelJAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.ColorCube;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.KernelJAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
 /**
  * An <code>OperationDescriptor</code> describing the "OrderedDither" operation.
@@ -118,15 +118,15 @@ import javax.media.jai.registry.RenderedRegistryMode;
  * </tr>
  * <tr>
  * <td>colorMap</td>
- * <td>javax.media.jai.ColorCube</td>
+ * <td>org.eclipse.imagen.ColorCube</td>
  * <td>ColorCube.BYTE_496</td>
  * <tr>
  * <td>ditherMask</td>
- * <td>javax.media.jai.KernelJAI[]</td>
+ * <td>org.eclipse.imagen.KernelJAI[]</td>
  * <td>KernelJAI.DITHER_MASK_443</td>
  * <tr>
  * <td>roi</td>
- * <td>javax.media.jai.KernelJAI[]</td>
+ * <td>org.eclipse.imagen.KernelJAI[]</td>
  * <td>null</td>
  * <tr>
  * <td>nodata</td>
@@ -153,8 +153,8 @@ public class OrderedDitherDescriptor extends OperationDescriptorImpl {
                 { "arg3Desc", JaiI18N.getString("OrderedDitherDescriptor4") },
                 { "arg4Desc", JaiI18N.getString("OrderedDitherDescriptor5") } },
                 new String[] { "rendered" }, 1, new String[] { "colorMap", "ditherMask", "roi",
-                        "nodata", "destNoData" }, new Class[] { javax.media.jai.ColorCube.class,
-                        javax.media.jai.KernelJAI[].class, javax.media.jai.ROI.class,
+                        "nodata", "destNoData" }, new Class[] { org.eclipse.imagen.ColorCube.class,
+                        org.eclipse.imagen.KernelJAI[].class, org.eclipse.imagen.ROI.class,
                         it.geosolutions.jaiext.range.Range.class, Double.class }, new Object[] {
                         ColorCube.BYTE_496, KernelJAI.DITHER_MASK_443, null, null, 0d }, null);
     }

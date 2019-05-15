@@ -30,12 +30,12 @@ import java.awt.image.RenderedImage;
 import java.awt.image.SampleModel;
 import java.awt.image.WritableRaster;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.PointOpImage;
-import javax.media.jai.ROI;
-import javax.media.jai.ROIShape;
-import javax.media.jai.iterator.RandomIter;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.PointOpImage;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.ROIShape;
+import org.eclipse.imagen.iterator.RandomIter;
 
 /**
  * {@link PointOpImage} to perform a color inversion given a certain {@link ColorIndexer}. Derived and improved from GeoTools one

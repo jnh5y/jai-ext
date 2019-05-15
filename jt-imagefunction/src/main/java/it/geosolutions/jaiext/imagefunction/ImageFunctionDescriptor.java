@@ -22,17 +22,17 @@ import it.geosolutions.jaiext.range.Range;
 import java.awt.RenderingHints;
 import java.awt.image.renderable.ParameterBlock;
 
-import javax.media.jai.ImageFunction;
-import javax.media.jai.JAI;
-import javax.media.jai.OperationDescriptorImpl;
-import javax.media.jai.ParameterBlockJAI;
-import javax.media.jai.PropertyGenerator;
-import javax.media.jai.ROI;
-import javax.media.jai.RenderableOp;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.registry.RenderedRegistryMode;
+import org.eclipse.imagen.ImageFunction;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.OperationDescriptorImpl;
+import org.eclipse.imagen.ParameterBlockJAI;
+import org.eclipse.imagen.PropertyGenerator;
+import org.eclipse.imagen.ROI;
+import org.eclipse.imagen.RenderableOp;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.registry.RenderedRegistryMode;
 
-import com.sun.media.jai.util.PropertyGeneratorImpl;
+import org.eclipse.imagen.media.util.PropertyGeneratorImpl;
 
 /**
  * This property generator computes the properties for the operation "ImageFunction" dynamically.
@@ -196,7 +196,7 @@ class ImageFunctionPropertyGenerator extends PropertyGeneratorImpl {
  * </tr>
  * <tr>
  * <td>function</td>
- * <td>javax.media.jai.ImageFunction</td>
+ * <td>org.eclipse.imagen.ImageFunction</td>
  * <td>NO_PARAMETER_DEFAULT</td>
  * <tr>
  * <td>width</td>
@@ -224,7 +224,7 @@ class ImageFunctionPropertyGenerator extends PropertyGeneratorImpl {
  * <td>0.0F</td>
  * <tr>
  * <td>roi</td>
- * <td>javax.media.jai.ROI</td>
+ * <td>org.eclipse.imagen.ROI</td>
  * <td>null</td>
  * <tr>
  * <td>nodata</td>
@@ -256,9 +256,9 @@ public class ImageFunctionDescriptor extends OperationDescriptorImpl {
                 { "arg6Desc", JaiI18N.getString("ImageFunctionDescriptor8") },
                 { "arg6Desc", JaiI18N.getString("ImageFunctionDescriptor9") },
                 { "arg6Desc", JaiI18N.getString("ImageFunctionDescriptor10") } }, 0, new Class[] {
-                javax.media.jai.ImageFunction.class, java.lang.Integer.class,
+                org.eclipse.imagen.ImageFunction.class, java.lang.Integer.class,
                 java.lang.Integer.class, java.lang.Float.class, java.lang.Float.class,
-                java.lang.Float.class, java.lang.Float.class, javax.media.jai.ROI.class,
+                java.lang.Float.class, java.lang.Float.class, org.eclipse.imagen.ROI.class,
                 it.geosolutions.jaiext.range.Range.class, java.lang.Float.class }, new String[] {
                 "function", "width", "height", "xScale", "yScale", "xTrans", "yTrans", "roi",
                 "nodata", "destNoData" }, new Object[] { NO_PARAMETER_DEFAULT,

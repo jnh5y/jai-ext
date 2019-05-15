@@ -28,11 +28,11 @@ import java.awt.image.WritableRaster;
 import java.awt.image.renderable.ParameterBlock;
 import java.io.IOException;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.RenderedOp;
-import javax.media.jai.operator.NullDescriptor;
-import javax.media.jai.operator.TranslateDescriptor;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.RenderedOp;
+import org.eclipse.imagen.operator.NullDescriptor;
+import org.eclipse.imagen.operator.TranslateDescriptor;
 
 import org.junit.Test;
 
@@ -106,12 +106,12 @@ public class MosaicTestImage extends TestBase{
         if (!oldDescriptor) {
 
             image5 = MosaicDescriptor.create(sources, 
-                    javax.media.jai.operator.MosaicDescriptor.MOSAIC_TYPE_OVERLAY, 
+                    org.eclipse.imagen.operator.MosaicDescriptor.MOSAIC_TYPE_OVERLAY, 
                     null,null,null,background,null,
                     hints);
         } else {
-            image5 = javax.media.jai.operator.MosaicDescriptor.create(sources,
-                    javax.media.jai.operator.MosaicDescriptor.MOSAIC_TYPE_OVERLAY, null, null,
+            image5 = org.eclipse.imagen.operator.MosaicDescriptor.create(sources,
+                    org.eclipse.imagen.operator.MosaicDescriptor.MOSAIC_TYPE_OVERLAY, null, null,
                     threshold, background, hints);
         }
         // Operations for showing the mosaic image
@@ -172,7 +172,7 @@ public class MosaicTestImage extends TestBase{
         Range[] noData = new Range[] { noDataByte, noDataByte };
 
         RenderedImage mosaic = MosaicDescriptor.create(sources,
-                javax.media.jai.operator.MosaicDescriptor.MOSAIC_TYPE_OVERLAY, null, null, null,
+                org.eclipse.imagen.operator.MosaicDescriptor.MOSAIC_TYPE_OVERLAY, null, null, null,
                 background, noData, null);
         int[] destPixel = new int[3];
 

@@ -26,10 +26,10 @@ import java.awt.image.SinglePixelPackedSampleModel;
 import java.awt.image.WritableRaster;
 import java.util.Map;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.PointOpImage;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.PointOpImage;
 
-import com.sun.media.jai.util.JDKWorkarounds;
+import org.eclipse.imagen.media.util.JDKWorkarounds;
 
 /**
  * An <code>OpImage</code> implementing the "BandSelect" operation.
@@ -37,7 +37,7 @@ import com.sun.media.jai.util.JDKWorkarounds;
  * <p>This <code>OpImage</code> copies the specified bands of the source
  * image to the destination image in the order that is specified.
  *
- * @see javax.media.jai.operator.BandSelectDescriptor
+ * @see org.eclipse.imagen.operator.BandSelectDescriptor
  * @see BandSelectCRIF
  *
  *

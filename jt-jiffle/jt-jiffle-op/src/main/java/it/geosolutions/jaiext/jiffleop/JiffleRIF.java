@@ -51,10 +51,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Vector;
 
-import javax.media.jai.ImageLayout;
-import javax.media.jai.JAI;
-import javax.media.jai.PlanarImage;
-import javax.media.jai.RasterFactory;
+import org.eclipse.imagen.ImageLayout;
+import org.eclipse.imagen.JAI;
+import org.eclipse.imagen.PlanarImage;
+import org.eclipse.imagen.RasterFactory;
 
 import it.geosolutions.jaiext.jiffle.runtime.BandTransform;
 import it.geosolutions.jaiext.jiffle.runtime.CoordinateTransform;

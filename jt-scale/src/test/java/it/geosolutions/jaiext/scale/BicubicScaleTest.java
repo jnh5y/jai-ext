@@ -28,8 +28,8 @@ import java.awt.image.RenderedImage;
 import java.awt.image.renderable.ParameterBlock;
 import java.lang.reflect.Array;
 
-import javax.media.jai.Interpolation;
-import javax.media.jai.JAI;
+import org.eclipse.imagen.Interpolation;
+import org.eclipse.imagen.JAI;
 
 import org.junit.Test;
 
