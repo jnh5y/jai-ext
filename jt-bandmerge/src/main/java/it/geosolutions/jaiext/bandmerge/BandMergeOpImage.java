@@ -17,7 +17,7 @@
 */
 package it.geosolutions.jaiext.bandmerge;
 
-import com.sun.media.imageioimpl.common.BogusColorSpace;
+import com.sun.imageio.plugins.common.BogusColorSpace;
 import it.geosolutions.jaiext.range.Range;
 
 import java.awt.Rectangle;
