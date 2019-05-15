@@ -467,6 +467,11 @@
   <artifactId>imagen-core</artifactId>
   <version>${jai.version}</version>
 </dependency>
+      <dependency>
+          <groupId>org.eclipse.imagen</groupId>
+          <artifactId>imagen-mlib</artifactId>
+          <version>${jai.version}</version>
+      </dependency>
 <!--
 <dependency>
   <groupId>org.eclipse.imagen</groupId>
